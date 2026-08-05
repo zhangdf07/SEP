@@ -1,0 +1,1111 @@
+,feature_method,model,n_features,R2,RMSE,MAE,n_params,samples_per_param,param_note,best_params
+0,rf_importance,GradientBoosting-tiny,10,0.5051283068255077,1.080918899043821,0.5291897465079899,660.0,0.1924242424242424,"100 stages, 660 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+1,rf_importance,LightGBM-tiny,10,0.4288270855983843,1.1612630462794211,0.6118727262385114,1032.0,0.1230620155038759,"100 boosting trees, ~1032 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+2,mutual_info,GradientBoosting-tiny,10,0.425404034884304,1.1647375846568129,0.5656291400053941,1308.0,0.0970948012232415,"100 stages, 1308 total nodes","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}"
+3,mutual_info,GaussianProcess,10,0.4159505806014837,1.1742798322339536,0.6271413124811089,21.19698799564277,5.99141727240238,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+4,mutual_info,KernelRidge,10,0.4004652857829408,1.1897452269928492,0.8026517569984313,6.2786962345059525,20.227129209093384,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+5,rf_importance,GaussianProcess,10,0.3993273531132282,1.1908737756227763,0.6015179113819945,35.92050184518666,3.535585347536507,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+6,correlation,GradientBoosting-tiny,10,0.3893644211133644,1.2007092500039278,0.6891399833728923,1264.0,0.1004746835443037,"100 stages, 1264 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100}"
+7,f_regression,GradientBoosting-tiny,10,0.3880370165426262,1.202013597288415,0.6800402413219295,628.0,0.2022292993630573,"50 stages, 628 total nodes","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50}"
+8,rf_importance,SVR-RBF,10,0.3665527824785325,1.2229311864484604,0.5640839885845468,88.0,1.443181818181818,88 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.1, 'gamma': 0.1}"
+9,rf_importance,NuSVR,10,0.3645367700336975,1.2248756941391754,0.5784601562251412,78.0,1.6282051282051282,78 support vectors (of 127 training points),"{'C': 1, 'nu': 0.5}"
+10,rf_importance,HistGradientBoosting-tiny,10,0.3572248397207647,1.2319025281978786,0.7296442204071418,882.0,0.1439909297052154,"100 stages, 882 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 10}"
+11,correlation,LightGBM-tiny,10,0.3541558534066087,1.234839939413214,0.7841234285929383,452.0,0.2809734513274336,"50 boosting trees, ~452 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50, 'num_leaves': 7}"
+12,f_regression,LightGBM-tiny,10,0.3540542852959447,1.2349370336035363,0.7844927429160811,452.0,0.2809734513274336,"50 boosting trees, ~452 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50, 'num_leaves': 7}"
+13,mutual_info,RandomForest-tiny,10,0.3526171190198467,1.2363100775910971,0.6605186378965606,1162.0,0.1092943201376936,"100 trees, 1162 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 100}"
+14,mutual_info,NuSVR,10,0.3382527569557637,1.2499506714188375,0.6530289668191037,101.0,1.2574257425742574,101 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+15,mutual_info,LinearRegression,10,0.3348168819659527,1.2531914208881032,0.8157623324823279,11.0,11.545454545454543,linear coefficients + intercept,{}
+16,rf_importance,RandomForest-tiny,10,0.3314501610642663,1.2563588348426356,0.663321272374821,970.0,0.1309278350515464,"100 trees, 970 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 100}"
+17,mutual_info,LassoLarsIC,10,0.3311185388209113,1.256670393426255,0.8219957079773454,11.0,11.545454545454543,linear coefficients + intercept,{}
+18,mutual_info,HuberRegressor,10,0.3286380684485879,1.258998346376087,0.777552829365395,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.2}"
+19,rf_importance,Bagging-tiny,10,0.3206757080072396,1.2664422079924729,0.6862982429544964,582.0,0.218213058419244,"50 trees, 582 total nodes","{'max_samples': 0.7, 'n_estimators': 50}"
+20,mutual_info,SVR-RBF,10,0.3187735553941677,1.268214029215711,0.657821263042481,113.0,1.1238938053097345,113 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 0.1}"
+21,mutual_info,ExtraTree-tiny,10,0.3162479495869457,1.270562767651063,0.8205219511494543,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+22,rf_importance,DecisionTree-tiny,10,0.3067748096793402,1.279334087455589,0.7052623810212549,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+23,rf_importance,KNN,10,0.3029123339362363,1.2828931999949622,0.659674736645724,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 9, 'weights': 'uniform'}"
+24,mutual_info,BayesianRidge,10,0.2943745584141019,1.2907255867003868,0.8209733225936531,11.0,11.545454545454543,linear coefficients + intercept,{}
+25,mutual_info,RidgeCV,10,0.2925912361148091,1.2923555784086744,0.8155358525282449,11.0,11.545454545454543,linear coefficients + intercept,{}
+26,rf_importance,BayesianRidge,10,0.2864749343689697,1.2979304489649008,0.8414223629242736,11.0,11.545454545454543,linear coefficients + intercept,{}
+27,mutual_info,LightGBM-tiny,10,0.2864001321660911,1.2979984812717011,0.6951230598015077,516.0,0.2461240310077519,"50 boosting trees, ~516 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50, 'num_leaves': 7}"
+28,mutual_info,HistGradientBoosting-tiny,10,0.2850375037918963,1.2992371628571964,0.7076032546069364,878.0,0.1446469248291571,"100 stages, 878 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 10}"
+29,rf_importance,OrthogonalMatchingPursuit,10,0.2835717191386796,1.3005683003807271,0.8770306395361326,11.0,11.545454545454543,linear coefficients + intercept,{'n_nonzero_coefs': 3}
+30,rf_importance,ExtraTrees-tiny,10,0.2835654943157387,1.3005739504855758,0.793500742332352,912.0,0.1392543859649122,"100 trees, 912 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+31,rf_importance,RidgeCV,10,0.2826423259456158,1.3014116140799303,0.8484443944823843,11.0,11.545454545454543,linear coefficients + intercept,{}
+32,mutual_info,ExtraTrees-tiny,10,0.2780230739901952,1.3055949537960967,0.7357871002335266,1926.0,0.0659397715472481,"200 trees, 1926 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+33,rf_importance,LinearRegression,10,0.2743036722116968,1.308953644276825,0.8560421473158681,11.0,11.545454545454543,linear coefficients + intercept,{}
+34,rf_importance,LassoLarsIC,10,0.2713894030064745,1.3115792750582764,0.8326181531952345,11.0,11.545454545454543,linear coefficients + intercept,{}
+35,rf_importance,SGDRegressor,10,0.2654545921926545,1.3169100980422814,0.8459037262080427,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+36,rf_importance,KernelRidge,10,0.2569092160619394,1.324548122505943,0.7689556035618853,7.261409122744954,17.48971829754051,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+37,mutual_info,Bagging-tiny,10,0.2556889954255781,1.325635188870846,0.7169153596079328,576.0,0.2204861111111111,"50 trees, 576 total nodes","{'max_samples': 0.7, 'n_estimators': 50}"
+38,rfe_ridge,GaussianProcess,10,0.2542846942415552,1.326885146085815,0.7052383916653481,35.96864023588616,3.5308535203755413,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+39,rf_importance,Ridge,10,0.2530779249408568,1.3279583418211192,0.8808653308524129,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 50}
+40,mutual_info,LassoCV,10,0.2511329878312062,1.329686176874073,0.8479971744350954,11.0,11.545454545454543,linear coefficients + intercept,{}
+41,rf_importance,PLS,10,0.2428330921110141,1.3370345079332748,0.8875717450509456,3.0,42.333333333333336,2 latent components (true PLS dimensionality),{'n_components': 2}
+42,mutual_info,ElasticNetCV,10,0.2386255400493772,1.3407442900852804,0.8339011039327582,11.0,11.545454545454543,linear coefficients + intercept,{}
+43,mutual_info,KNN,10,0.2376515322612907,1.3416016067316512,0.6569936305538762,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 9, 'weights': 'distance'}"
+44,rfe_ridge,NuSVR,10,0.2313878342352365,1.3471018451483696,0.7035286028873196,45.0,2.8222222222222224,45 support vectors (of 127 training points),"{'C': 1, 'nu': 0.3}"
+45,mutual_info,LinearSVR,10,0.2283801386724123,1.3497349782534207,0.8126373279846293,11.0,11.545454545454543,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+46,correlation,HistGradientBoosting-tiny,10,0.2281209405393918,1.3499616568480894,0.8454456291700869,702.0,0.1809116809116809,"100 stages, 702 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 20}"
+47,f_regression,HistGradientBoosting-tiny,10,0.2281209405393918,1.3499616568480894,0.8454456291700869,702.0,0.1809116809116809,"100 stages, 702 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 20}"
+48,mutual_info,LassoLarsCV,10,0.2272781676053477,1.3506984307964018,0.8626162993581624,11.0,11.545454545454543,linear coefficients + intercept,{}
+49,rf_importance,ElasticNetCV,10,0.2245960733140665,1.3530405170888615,0.899400875635771,11.0,11.545454545454543,linear coefficients + intercept,{}
+50,rfe_ridge,SVR-RBF,10,0.2236932207659052,1.353828003873352,0.6905830473973187,111.0,1.1441441441441442,111 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+51,rf_importance,LassoCV,10,0.2216229761272111,1.3556319872607718,0.8989413546228423,11.0,11.545454545454543,linear coefficients + intercept,{}
+52,rf_importance,LassoLarsCV,10,0.221201779812326,1.3559987182647946,0.8989461184278622,11.0,11.545454545454543,linear coefficients + intercept,{}
+53,rfe_ridge,LightGBM-tiny,10,0.2195120289581956,1.3574689697540294,0.7532223428849341,958.0,0.1325678496868476,"100 boosting trees, ~958 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+54,f_regression,RandomForest-tiny,10,0.2194679256160809,1.3575073227299044,0.8216664760209695,1114.0,0.1140035906642728,"200 trees, 1114 total nodes","{'max_depth': 2, 'min_samples_leaf': 5, 'n_estimators': 200}"
+55,correlation,RandomForest-tiny,10,0.2183675615171273,1.3584638665306814,0.8222568645337522,1114.0,0.1140035906642728,"200 trees, 1114 total nodes","{'max_depth': 2, 'min_samples_leaf': 5, 'n_estimators': 200}"
+56,mutual_info,Ridge,10,0.2134277881079895,1.3627497267625486,0.8552992201123393,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+57,mutual_info,OrthogonalMatchingPursuit,10,0.213341603618309,1.362824382764236,0.8685805146076933,11.0,11.545454545454543,linear coefficients + intercept,{'n_nonzero_coefs': 8}
+58,correlation,Bagging-tiny,10,0.2121947999609124,1.3638173949828016,0.8128066072943174,212.0,0.5990566037735849,"20 trees, 212 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+59,rf_importance,TweedieRegressor,10,0.2077090921917391,1.3676946241310854,0.9310200306423376,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+60,rf_importance,AdaBoost-tiny,10,0.1976450020216833,1.3763537959359646,0.8195698535278384,144.0,0.8819444444444444,"22 trees, 144 total nodes","{'learning_rate': 0.5, 'n_estimators': 30}"
+61,mutual_info,AdaBoost-tiny,10,0.1972034938373855,1.3767324237844694,0.7974159800421052,186.0,0.6827956989247311,"30 trees, 186 total nodes","{'learning_rate': 0.5, 'n_estimators': 30}"
+62,rf_importance,LarsCV,10,0.1882914428710543,1.3843530632579308,0.9411469899394884,11.0,11.545454545454543,linear coefficients + intercept,{}
+63,f_regression,Bagging-tiny,10,0.1880056601362791,1.384596740243078,0.8235586964513073,212.0,0.5990566037735849,"20 trees, 212 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+64,rfe_ridge,KernelRidge,10,0.182368726556063,1.3893944221709198,0.8437711235960591,15.465262524819028,8.211952418925145,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 0.1, 'gamma': 0.01}"
+65,mutual_info,DecisionTree-tiny,10,0.1671672649670856,1.4022508030081389,0.7607686475422201,15.0,8.466666666666667,"single tree, 15 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+66,f_regression,GaussianProcess,10,0.1649714643549539,1.4040981345258765,0.773127693997329,93.59837385054271,1.3568611801182868,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+67,correlation,GaussianProcess,10,0.1649714641330688,1.4040981347124262,0.7731276930120505,93.59837385054266,1.3568611801182875,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+68,rfe_ridge,GradientBoosting-tiny,10,0.1616249119168371,1.4069089303849924,0.6739113472288374,1254.0,0.1012759170653907,"100 stages, 1254 total nodes","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}"
+69,f_regression,AdaBoost-tiny,10,0.1606946510045489,1.4076892669825345,0.9145704715798464,127.0,1.0,"21 trees, 127 total nodes","{'learning_rate': 0.5, 'n_estimators': 30}"
+70,f_regression,ExtraTrees-tiny,10,0.1605793030661734,1.4077859948757407,0.8665521420786513,1168.0,0.1087328767123287,"200 trees, 1168 total nodes","{'max_depth': 2, 'min_samples_leaf': 10, 'n_estimators': 200}"
+71,correlation,ExtraTrees-tiny,10,0.1479848801179217,1.4183076806664527,0.8755846332098424,1144.0,0.111013986013986,"200 trees, 1144 total nodes","{'max_depth': 2, 'min_samples_leaf': 10, 'n_estimators': 200}"
+72,correlation,AdaBoost-tiny,10,0.1463608234834147,1.4196587807441592,0.9106528443767996,300.0,0.4233333333333333,"50 trees, 300 total nodes","{'learning_rate': 0.05, 'n_estimators': 50}"
+73,mutual_info,SGDRegressor,10,0.1443012917583315,1.4213703182163382,0.8527409126999477,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'l2'}"
+74,rfe_ridge,RandomForest-tiny,10,0.1416323878846188,1.423585202588657,0.7978634363104055,1062.0,0.1195856873822975,"100 trees, 1062 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 100}"
+75,rf_importance,OrthogonalMatchingPursuitCV,10,0.1366767600366742,1.4276886923542689,1.0281058710405284,11.0,11.545454545454543,linear coefficients + intercept,{}
+76,correlation,DecisionTree-tiny,10,0.1366322421065398,1.4277255018151915,0.9073423374181256,5.0,25.4,"single tree, 5 nodes","{'max_depth': 2, 'min_samples_leaf': 10}"
+77,f_regression,DecisionTree-tiny,10,0.1366322421065395,1.4277255018151918,0.907342337418126,5.0,25.4,"single tree, 5 nodes","{'max_depth': 2, 'min_samples_leaf': 10}"
+78,rfe_ridge,HuberRegressor,10,0.1334223070063919,1.430377126419347,0.8720819303589109,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+79,rf_importance,HuberRegressor,10,0.1307877789456475,1.4325497584575844,0.8248711781374172,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.2}"
+80,rfe_ridge,Bagging-tiny,10,0.1296264553698939,1.433506428446437,0.8092202583221494,214.0,0.5934579439252337,"20 trees, 214 total nodes","{'max_samples': 1.0, 'n_estimators': 20}"
+81,correlation,SVR-RBF,10,0.1293642282664475,1.433722356384433,0.7715675264778756,111.0,1.1441441441441442,111 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 0.1}"
+82,f_regression,SVR-RBF,10,0.1293642282664472,1.4337223563844332,0.7715675264778756,111.0,1.1441441441441442,111 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 0.1}"
+83,correlation,NuSVR,10,0.1274872299891466,1.4352670008921165,0.7753104671014949,101.0,1.2574257425742574,101 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+84,f_regression,NuSVR,10,0.1274872299891464,1.4352670008921165,0.7753104671014949,101.0,1.2574257425742574,101 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+85,mutual_info,LarsCV,10,0.1247601570634359,1.437508242672772,0.9063291750351012,11.0,11.545454545454543,linear coefficients + intercept,{}
+86,rfe_ridge,TweedieRegressor,10,0.1240570224258412,1.43808554666832,0.917935000498686,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 0.001}
+87,rfe_ridge,KNN,10,0.1235218512297973,1.438524790126198,0.7814197391858047,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 9, 'weights': 'uniform'}"
+88,rfe_ridge,Ridge,10,0.1190149442416399,1.4422185413136328,0.92638127317304,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 0.1}
+89,rfe_ridge,SGDRegressor,10,0.1184736552345544,1.4426615324645131,0.9324077737356068,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'l2'}"
+90,mutual_info,TweedieRegressor,10,0.1123982542053568,1.4476243437080412,0.8646952653935605,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 0.01}
+91,rfe_ridge,BayesianRidge,10,0.1116553327244351,1.4482300468167133,0.9432563094368736,11.0,11.545454545454543,linear coefficients + intercept,{}
+92,rfe_ridge,RidgeCV,10,0.1095285468367316,1.449962614163952,0.9467606977083848,11.0,11.545454545454543,linear coefficients + intercept,{}
+93,rf_importance,ExtraTree-tiny,10,0.1086760165918074,1.4506565394171564,0.8039714207192534,11.0,11.545454545454543,"single tree, 11 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+94,rf_importance,LinearSVR,10,0.1075301785341322,1.4515886828527778,0.8231839540935932,11.0,11.545454545454543,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+95,rfe_ridge,LassoLarsIC,10,0.1061734362045628,1.4526916242880363,0.9568480829540564,11.0,11.545454545454543,linear coefficients + intercept,{}
+96,rfe_ridge,LinearSVR,10,0.1013196786820691,1.4566305688137926,0.9026587254997568,11.0,11.545454545454543,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+97,rfe_ridge,LinearRegression,10,0.094035457738488,1.4625219880150788,0.966488629672909,11.0,11.545454545454543,linear coefficients + intercept,{}
+98,mutual_info,OrthogonalMatchingPursuitCV,10,0.0933900232739436,1.4630428660328203,0.9522182780606844,11.0,11.545454545454543,linear coefficients + intercept,{}
+99,rfe_ridge,PLS,10,0.093021162858762,1.4633404602205469,0.9642159743766102,8.0,15.875,7 latent components (true PLS dimensionality),{'n_components': 7}
+100,rfe_ridge,HistGradientBoosting-tiny,10,0.0919862455815532,1.4641751018314335,0.8310967259719018,582.0,0.218213058419244,"100 stages, 582 total nodes","{'learning_rate': 0.05, 'max_depth': 2, 'min_samples_leaf': 20}"
+101,lasso,DecisionTree-tiny,10,0.0861822404091097,1.468847136348482,0.9523769035323688,13.0,9.76923076923077,"single tree, 13 nodes","{'max_depth': 4, 'min_samples_leaf': 5}"
+102,rfe_ridge,AdaBoost-tiny,10,0.0849300731817009,1.4698531425234251,0.9247704675227192,91.0,1.3956043956043955,"15 trees, 91 total nodes","{'learning_rate': 0.5, 'n_estimators': 30}"
+103,lasso,RandomForest-tiny,10,0.0800722160938945,1.4737495032510926,0.9420522202026927,2048.0,0.06201171875,"200 trees, 2048 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 200}"
+104,f_regression,OrthogonalMatchingPursuit,10,0.077668701305083,1.4756734956145383,0.9871051199508628,11.0,11.545454545454543,linear coefficients + intercept,{'n_nonzero_coefs': 3}
+105,correlation,OrthogonalMatchingPursuit,10,0.0776687013050825,1.4756734956145388,0.9871051199508628,11.0,11.545454545454543,linear coefficients + intercept,{'n_nonzero_coefs': 3}
+106,rfe_ridge,ExtraTrees-tiny,10,0.0752371438781636,1.4776173866368296,0.8816493270637253,2006.0,0.0633100697906281,"200 trees, 2006 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+107,lasso,Ridge,10,0.0561805330409344,1.4927643996882676,0.9598693843790848,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 50}
+108,lasso,TweedieRegressor,10,0.0489307826557103,1.498486609836425,0.957865809532566,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+109,mutual_info,PLS,10,0.0486819401266417,1.498682632798339,0.9342250553020452,8.0,15.875,7 latent components (true PLS dimensionality),{'n_components': 7}
+110,lasso,LightGBM-tiny,10,0.0483391686837015,1.4989526052528537,0.9613810196567786,318.0,0.3993710691823899,"50 boosting trees, ~318 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 50, 'num_leaves': 7}"
+111,lasso,RidgeCV,10,0.0480544833903768,1.4991767911388534,0.981355663652238,11.0,11.545454545454543,linear coefficients + intercept,{}
+112,lasso,SGDRegressor,10,0.0448015731280146,1.5017360387703669,0.9907590411057892,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+113,lasso,BayesianRidge,10,0.0408970311594306,1.504802213988079,0.9729671063713176,11.0,11.545454545454543,linear coefficients + intercept,{}
+114,lasso,HistGradientBoosting-tiny,10,0.0406686294506593,1.5049813808494137,0.9716837147679712,598.0,0.2123745819397993,"100 stages, 598 total nodes","{'learning_rate': 0.05, 'max_depth': 2, 'min_samples_leaf': 20}"
+115,lasso,OrthogonalMatchingPursuit,10,0.0343655195634122,1.509917387678901,0.9894703088836508,11.0,11.545454545454543,linear coefficients + intercept,{'n_nonzero_coefs': 3}
+116,f_regression,LarsCV,10,0.0339574919782753,1.5102363607944476,0.9587471641616582,11.0,11.545454545454543,linear coefficients + intercept,{}
+117,correlation,LarsCV,10,0.0339574919782751,1.5102363607944478,0.9587471641616582,11.0,11.545454545454543,linear coefficients + intercept,{}
+118,lasso,OrthogonalMatchingPursuitCV,10,0.0325714077230296,1.5113194210566427,0.9746381901912144,11.0,11.545454545454543,linear coefficients + intercept,{}
+119,f_regression,LassoCV,10,0.0311790434208629,1.5124066075529627,0.9601690526369872,11.0,11.545454545454543,linear coefficients + intercept,{}
+120,correlation,LassoCV,10,0.031171853171478,1.512412219818278,0.9601711566382528,11.0,11.545454545454543,linear coefficients + intercept,{}
+121,f_regression,LassoLarsCV,10,0.03085929448911,1.5126561637271394,0.9602852071856968,11.0,11.545454545454543,linear coefficients + intercept,{}
+122,correlation,LassoLarsCV,10,0.0308592944891097,1.5126561637271396,0.9602852071856968,11.0,11.545454545454543,linear coefficients + intercept,{}
+123,rfe_ridge,ElasticNetCV,10,0.0304438414517581,1.5129803531139845,0.9920560458978296,11.0,11.545454545454543,linear coefficients + intercept,{}
+124,correlation,ElasticNetCV,10,0.0302301556252311,1.5131470709687391,0.9600624388583986,11.0,11.545454545454543,linear coefficients + intercept,{}
+125,f_regression,ElasticNetCV,10,0.0302298938058014,1.5131472752292028,0.9600627624786976,11.0,11.545454545454543,linear coefficients + intercept,{}
+126,f_regression,OrthogonalMatchingPursuitCV,10,0.0276974807019859,1.515121668749525,1.0273327289841852,11.0,11.545454545454543,linear coefficients + intercept,{}
+127,correlation,OrthogonalMatchingPursuitCV,10,0.0276974807019857,1.515121668749525,1.0273327289841852,11.0,11.545454545454543,linear coefficients + intercept,{}
+128,lasso,LinearRegression,10,0.0275875808620564,1.5152072938099397,1.0004095945603624,11.0,11.545454545454543,linear coefficients + intercept,{}
+129,rfe_ridge,LassoCV,10,0.0272559793929964,1.5154656215150353,0.994737851049826,11.0,11.545454545454543,linear coefficients + intercept,{}
+130,lasso,ExtraTrees-tiny,10,0.027102989187801,1.5155847907291289,0.9676004411711588,732.0,0.1734972677595628,"100 trees, 732 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+131,correlation,ExtraTree-tiny,10,0.0241709947073406,1.5178668119870815,0.985954655630595,5.0,25.4,"single tree, 5 nodes","{'max_depth': 2, 'min_samples_leaf': 10}"
+132,rfe_ridge,LassoLarsCV,10,0.0229171165762251,1.518841680024682,0.995337384033716,11.0,11.545454545454543,linear coefficients + intercept,{}
+133,lasso,HuberRegressor,10,0.022080740788688,1.5194915996463645,0.9202628241038024,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.2}"
+134,lasso,PLS,10,0.0219222404562994,1.519614733618492,1.0020676286843888,3.0,42.333333333333336,2 latent components (true PLS dimensionality),{'n_components': 2}
+135,correlation,KNN,10,0.0208456180111097,1.5204508641508754,0.8519058396713053,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 9, 'weights': 'uniform'}"
+136,f_regression,KNN,10,0.0208456180111097,1.5204508641508754,0.8519058396713053,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 9, 'weights': 'uniform'}"
+137,lasso,GradientBoosting-tiny,10,0.0069651386246076,1.5311898845608936,0.9733687382900198,526.0,0.2414448669201521,"50 stages, 526 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 50}"
+138,lasso,LinearSVR,10,0.0066647860615424,1.5314214283135366,0.9162722232870644,11.0,11.545454545454543,linear coefficients + intercept,"{'C': 1, 'epsilon': 0.1}"
+139,rfe_ridge,OrthogonalMatchingPursuit,10,0.005836295585935,1.5320599356402718,0.9723917972346948,11.0,11.545454545454543,linear coefficients + intercept,{'n_nonzero_coefs': 10}
+140,lasso,NuSVR,10,0.0058047205768047,1.5320842648438764,0.9219936766294722,94.0,1.351063829787234,94 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+141,lasso,GaussianProcess,10,0.0042141754663445,1.5333093135482954,0.9637202450381246,16.977709708132128,7.480396483582733,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * Matern(length_scale=1, nu=2.5) + WhiteKernel(noise_level=0.5)}"
+142,lasso,Bagging-tiny,10,0.0041921764547316,1.5333262504750256,0.9798470696177324,198.0,0.6414141414141414,"20 trees, 198 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+143,lasso,SVR-RBF,10,0.0038518306687556,1.533588257125765,0.9063462471927048,117.0,1.0854700854700854,117 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+144,lasso,LassoLarsIC,10,0.0015552311115604,1.5353550678072991,0.995167880853678,11.0,11.545454545454543,linear coefficients + intercept,{}
+145,rfe_ridge,LarsCV,10,-0.0002314449524576,1.5367281813377578,0.990918236583334,11.0,11.545454545454543,linear coefficients + intercept,{}
+146,rfe_ridge,ExtraTree-tiny,10,-0.0065130942853517,1.5415461057451676,0.9493252497480416,7.0,18.142857142857142,"single tree, 7 nodes","{'max_depth': 2, 'min_samples_leaf': 10}"
+147,lasso,ExtraTree-tiny,10,-0.0065382463221159,1.541565366687882,0.993141080939144,11.0,11.545454545454543,"single tree, 11 nodes","{'max_depth': 3, 'min_samples_leaf': 5}"
+148,mutual_info,LassoLars,10,-0.0185625229924113,1.55074593065835,0.9625518795832496,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+149,mutual_info,Lasso,10,-0.0186590375093929,1.5508193998591806,0.962574996631004,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+150,lasso,ElasticNetCV,10,-0.0187089955171106,1.550857427744276,0.9704487134446308,11.0,11.545454545454543,linear coefficients + intercept,{}
+151,lasso,LassoCV,10,-0.0221252905782047,1.553455692846855,0.9765670871432948,11.0,11.545454545454543,linear coefficients + intercept,{}
+152,f_regression,ExtraTree-tiny,10,-0.0250508247037544,1.555677260188081,0.9729188013887212,5.0,25.4,"single tree, 5 nodes","{'max_depth': 2, 'min_samples_leaf': 10}"
+153,mutual_info,Dummy-baseline,10,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+154,f_regression,Dummy-baseline,10,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+155,rf_importance,Lasso,10,-0.0324672792445992,1.5612949404592804,0.9849014605770248,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+156,rfe_ridge,Dummy-baseline,10,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+157,lasso,Dummy-baseline,10,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+158,lasso,Lasso,10,-0.0324672792445992,1.5612949404592804,0.9849014605770248,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+159,correlation,Dummy-baseline,10,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+160,lasso,LarsCV,10,-0.0324672792445992,1.5612949404592804,0.9849014605770248,11.0,11.545454545454543,linear coefficients + intercept,{}
+161,lasso,ElasticNet,10,-0.0324672792445992,1.5612949404592804,0.9849014605770248,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+162,lasso,LassoLars,10,-0.0324672792445992,1.5612949404592804,0.9849014605770248,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+163,lasso,LassoLarsCV,10,-0.0324672792445992,1.5612949404592804,0.9849014605770248,11.0,11.545454545454543,linear coefficients + intercept,{}
+164,rf_importance,Dummy-baseline,10,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+165,rf_importance,LassoLars,10,-0.0324672792445992,1.5612949404592804,0.9849014605770248,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+166,rf_importance,ElasticNet,10,-0.0325740528988192,1.5613756698246009,0.9849880714300852,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+167,rfe_ridge,ElasticNet,10,-0.0338935275166654,1.5623729531789967,0.9833907480521836,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+168,rfe_ridge,Lasso,10,-0.0339969111672868,1.5624510655656023,0.983425430679307,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+169,rfe_ridge,LassoLars,10,-0.0340026604570533,1.5624554093752103,0.9834226628378734,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+170,mutual_info,ElasticNet,10,-0.0353319313436788,1.5634594007056168,0.9886107884902354,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+171,correlation,ElasticNet,10,-0.0466403514319802,1.571974659848666,0.9940574575923962,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+172,f_regression,ElasticNet,10,-0.0466494186248205,1.5719814689529068,0.994062615974051,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+173,correlation,Lasso,10,-0.0481961889030664,1.57314260108563,0.9949033009529978,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+174,f_regression,Lasso,10,-0.0482032460387826,1.573147896784216,0.994907834680052,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+175,f_regression,LassoLars,10,-0.0482077262852094,1.5731512587670846,0.9949082047313428,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+176,correlation,LassoLars,10,-0.0482077262852096,1.5731512587670848,0.994908204731343,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+177,rfe_ridge,DecisionTree-tiny,10,-0.0597927001685361,1.5818207409326748,0.9585221921140772,13.0,9.76923076923077,"single tree, 13 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+178,mutual_info,PassiveAggressiveRegressor,10,-0.0621756326779747,1.5835980958803346,1.012357186160746,11.0,11.545454545454543,linear coefficients + intercept,{'C': 1}
+179,lasso,KernelRidge,10,-0.0672571840748617,1.5873816196469202,1.029432503066572,7.363238593590938,17.247845277014722,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+180,lasso,AdaBoost-tiny,10,-0.079602765435593,1.5965363022157495,1.0473288676884285,106.0,1.19811320754717,"18 trees, 106 total nodes","{'learning_rate': 0.5, 'n_estimators': 30}"
+181,rf_importance,PassiveAggressiveRegressor,10,-0.0841386722984318,1.5998866777753176,1.0525765650096777,11.0,11.545454545454543,linear coefficients + intercept,{'C': 1}
+182,lasso,KNN,10,-0.1783605693232635,1.667961049250695,1.1247292451250668,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 7, 'weights': 'uniform'}"
+183,rfe_ridge,OrthogonalMatchingPursuitCV,10,-0.1804129334267654,1.6694129707529122,1.062788207025161,11.0,11.545454545454543,linear coefficients + intercept,{}
+184,lasso,RANSACRegressor,10,-0.2031319528675728,1.685401725981751,0.9471224594450576,11.0,11.545454545454543,RANSAC inlier-fitted LinearRegression,{}
+185,rfe_ridge,PassiveAggressiveRegressor,10,-0.2810492691320501,1.739120684071398,1.122750923537278,11.0,11.545454545454543,linear coefficients + intercept,{'C': 0.1}
+186,rfe_ridge,RANSACRegressor,10,-0.4534638309278638,1.8524603380219424,1.044007839270614,11.0,11.545454545454543,RANSAC inlier-fitted LinearRegression,{}
+187,lasso,PassiveAggressiveRegressor,10,-0.5954785754594571,1.940851431406153,1.2261729371058048,11.0,11.545454545454543,linear coefficients + intercept,{'C': 0.1}
+188,correlation,KernelRidge,10,-0.7286421496149922,2.0202231943209217,1.01387970358767,7.862093369980872,16.153458630358262,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+189,f_regression,KernelRidge,10,-0.7286421496149931,2.020223194320922,1.01387970358767,7.862093369980873,16.153458630358262,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+190,lasso,SmallMLP,10,-0.7888087187255564,2.055080107021229,1.3987071169941785,97.0,1.309278350515464,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+191,rfe_ridge,SmallMLP,10,-0.7897680007189585,2.055631070657447,1.331392923240058,97.0,1.309278350515464,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+192,rf_importance,SmallMLP,10,-0.8467131546063242,2.088077074818404,1.4243556598581966,97.0,1.309278350515464,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+193,rf_importance,RANSACRegressor,10,-2.3839299997900216,2.826555316568349,1.4198279141737993,11.0,11.545454545454543,RANSAC inlier-fitted LinearRegression,{}
+194,mutual_info,SmallMLP,10,-2.530149527612387,2.8869772031360856,1.3316248482245898,97.0,1.309278350515464,"layers (8,)","{'alpha': 0.1, 'hidden_layer_sizes': (8,)}"
+195,mutual_info,RANSACRegressor,10,-3.356206284781494,3.2070152306898625,1.6520361689064715,11.0,11.545454545454543,RANSAC inlier-fitted LinearRegression,{}
+196,correlation,TweedieRegressor,10,-96.72477009869183,15.1896977623481,2.38694896236938,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+197,f_regression,TweedieRegressor,10,-96.72477009869183,15.1896977623481,2.38694896236938,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 1}
+198,f_regression,PLS,10,-119.22208404323318,16.847634413377158,2.5944843496266525,3.0,42.333333333333336,2 latent components (true PLS dimensionality),{'n_components': 2}
+199,correlation,PLS,10,-119.2220840432333,16.847634413377165,2.5944843496266534,3.0,42.333333333333336,2 latent components (true PLS dimensionality),{'n_components': 2}
+200,correlation,Ridge,10,-197.6366136826989,21.655910867388936,3.041739861760796,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 50}
+201,f_regression,Ridge,10,-197.63661368269905,21.655910867388943,3.041739861760796,11.0,11.545454545454543,linear coefficients + intercept,{'alpha': 50}
+202,f_regression,BayesianRidge,10,-315.26641115634845,27.32582854670866,3.606601959127609,11.0,11.545454545454543,linear coefficients + intercept,{}
+203,correlation,BayesianRidge,10,-315.2664111563495,27.325828546708703,3.606601959127613,11.0,11.545454545454543,linear coefficients + intercept,{}
+204,correlation,LassoLarsIC,10,-393.354872258866,30.5133864448972,3.913761626248725,11.0,11.545454545454543,linear coefficients + intercept,{}
+205,f_regression,LassoLarsIC,10,-393.35487225886607,30.5133864448972,3.9137616262487263,11.0,11.545454545454543,linear coefficients + intercept,{}
+206,f_regression,RidgeCV,10,-766.077888747699,42.55656204407337,5.129216569070629,11.0,11.545454545454543,linear coefficients + intercept,{}
+207,correlation,RidgeCV,10,-766.0778887476998,42.55656204407339,5.129216569070757,11.0,11.545454545454543,linear coefficients + intercept,{}
+208,f_regression,SGDRegressor,10,-798.6065381389241,43.44951890940185,5.223372016800578,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+209,correlation,SGDRegressor,10,-798.6065381389241,43.44951890940185,5.223372016800578,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+210,correlation,LinearRegression,10,-2464.0517893049705,76.28863210569844,8.473408967516075,11.0,11.545454545454543,linear coefficients + intercept,{}
+211,f_regression,LinearRegression,10,-2464.0517893049714,76.28863210569845,8.473408967516079,11.0,11.545454545454543,linear coefficients + intercept,{}
+212,f_regression,PassiveAggressiveRegressor,10,-4623.4104167553705,104.4900625714583,11.299613948599976,11.0,11.545454545454543,linear coefficients + intercept,{'C': 1}
+213,correlation,PassiveAggressiveRegressor,10,-4623.410416755372,104.49006257145832,11.299613948599982,11.0,11.545454545454543,linear coefficients + intercept,{'C': 1}
+214,f_regression,LinearSVR,10,-7618.474446338098,134.12486946206522,14.069527154016212,11.0,11.545454545454543,linear coefficients + intercept,"{'C': 1, 'epsilon': 0.1}"
+215,correlation,LinearSVR,10,-7618.474446338148,134.12486946206565,14.069527154016257,11.0,11.545454545454543,linear coefficients + intercept,"{'C': 1, 'epsilon': 0.1}"
+216,f_regression,HuberRegressor,10,-9212.185737713942,147.48631242303858,15.41643365505521,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.2}"
+217,correlation,HuberRegressor,10,-9212.185737714311,147.48631242304154,15.416433655055329,11.0,11.545454545454543,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.2}"
+218,f_regression,RANSACRegressor,10,-11645.152304837784,165.8204298214323,17.54474282764717,11.0,11.545454545454543,RANSAC inlier-fitted LinearRegression,{}
+219,correlation,RANSACRegressor,10,-11645.15230483779,165.82042982143233,17.544742827647173,11.0,11.545454545454543,RANSAC inlier-fitted LinearRegression,{}
+220,correlation,SmallMLP,10,-11921.436820125518,167.7758001410142,17.84815866229533,97.0,1.309278350515464,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+221,f_regression,SmallMLP,10,-26161.32279762161,248.5335102350371,25.803616921739287,97.0,1.309278350515464,"layers (8,)","{'alpha': 0.1, 'hidden_layer_sizes': (8,)}"
+222,rf_importance,BayesianRidge,15,0.5181098596181815,1.066647265072133,0.7535242223954887,16.0,7.9375,linear coefficients + intercept,{}
+223,rf_importance,SGDRegressor,15,0.5029320037855006,1.083314870837605,0.7513196456222747,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+224,rf_importance,GradientBoosting-tiny,15,0.4832944923349278,1.104506686216585,0.5466150645418686,664.0,0.1912650602409638,"100 stages, 664 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+225,rf_importance,LinearRegression,15,0.4787495030241315,1.109353722159659,0.78543568610556,16.0,7.9375,linear coefficients + intercept,{}
+226,rf_importance,KernelRidge,15,0.4742595449186479,1.114121364070331,0.7094484216744447,9.675658128289417,13.125722128263398,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+227,rf_importance,LassoLarsIC,15,0.4514828501008089,1.137999075448335,0.7663865284772015,16.0,7.9375,linear coefficients + intercept,{}
+228,rf_importance,PLS,15,0.4485468331165385,1.1410406626597922,0.7894829653174514,8.0,15.875,7 latent components (true PLS dimensionality),{'n_components': 7}
+229,rf_importance,RidgeCV,15,0.4393763898750974,1.1504890663167675,0.7905318694751509,16.0,7.9375,linear coefficients + intercept,{}
+230,mutual_info,GradientBoosting-tiny,15,0.4318450248200001,1.158191066788912,0.5565947575374094,1278.0,0.0993740219092331,"100 stages, 1278 total nodes","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}"
+231,rf_importance,GaussianProcess,15,0.4082378350673594,1.1820079597157538,0.6072012757127362,26.457017530810468,4.800238721242952,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+232,mutual_info,KernelRidge,15,0.4008735676177375,1.1893400510457584,0.7665876504877853,8.642532425729595,14.69476696690308,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+233,correlation,GradientBoosting-tiny,15,0.4007215790616186,1.1894908995181586,0.6356359396477299,1322.0,0.0960665658093797,"100 stages, 1322 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100}"
+234,rf_importance,ExtraTree-tiny,15,0.3939615884091636,1.1961809438897568,0.7816951030071307,17.0,7.470588235294118,"single tree, 17 nodes","{'max_depth': 4, 'min_samples_leaf': 5}"
+235,f_regression,GradientBoosting-tiny,15,0.3893880356607413,1.2006860328179458,0.6503652449508607,678.0,0.1873156342182891,"100 stages, 678 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+236,f_regression,LightGBM-tiny,15,0.3888209345750669,1.2012434673003622,0.6931367677918889,470.0,0.2702127659574468,"50 boosting trees, ~470 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50, 'num_leaves': 7}"
+237,correlation,LightGBM-tiny,15,0.3885310369545337,1.2015283235379788,0.6966563200282218,470.0,0.2702127659574468,"50 boosting trees, ~470 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50, 'num_leaves': 7}"
+238,rf_importance,LightGBM-tiny,15,0.3857060638749848,1.204300642349388,0.6113219618772653,960.0,0.1322916666666666,"100 boosting trees, ~960 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+239,rf_importance,SVR-RBF,15,0.3855273274312438,1.204475832715138,0.5592170366049363,88.0,1.443181818181818,88 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.1, 'gamma': 'scale'}"
+240,rf_importance,NuSVR,15,0.3848708856237471,1.2051190323827374,0.5607674470561256,84.0,1.511904761904762,84 support vectors (of 127 training points),"{'C': 1, 'nu': 0.5}"
+241,rf_importance,HuberRegressor,15,0.3702238937959089,1.2193823192315651,0.7422692111600444,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.2}"
+242,rfe_ridge,KernelRidge,15,0.3656693972597994,1.2237836197068843,0.7786745859631098,10.1318577900493,12.534719952813516,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+243,mutual_info,GaussianProcess,15,0.361008074747716,1.2282718225289853,0.6083674258467842,33.03921845026352,3.843916592372876,gp_effective_dof: trace(K(K+sigma^2*I)^-1),{'kernel': 1**2 * RBF(length_scale=1) + WhiteKernel(noise_level=0.5)}
+244,rf_importance,Ridge,15,0.3537822918980937,1.2351970085211237,0.8080783613746858,16.0,7.9375,linear coefficients + intercept,{'alpha': 0.1}
+245,rfe_ridge,SVR-RBF,15,0.3493175330806648,1.2394566905200195,0.6130498366221484,106.0,1.19811320754717,106 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+246,mutual_info,NuSVR,15,0.349275847679958,1.2394963922362574,0.6115989862561813,104.0,1.2211538461538465,104 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+247,rf_importance,RandomForest-tiny,15,0.3424791892620412,1.245952699332972,0.6398235230076899,1044.0,0.121647509578544,"100 trees, 1044 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 100}"
+248,mutual_info,SVR-RBF,15,0.3356194030128205,1.2524352261002063,0.609974381166292,104.0,1.2211538461538465,104 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.1, 'gamma': 0.1}"
+249,rf_importance,Bagging-tiny,15,0.3322268726155908,1.2556288129703792,0.6904227024112402,238.0,0.5336134453781513,"20 trees, 238 total nodes","{'max_samples': 1.0, 'n_estimators': 20}"
+250,rfe_ridge,GaussianProcess,15,0.3200982378167768,1.2669803731056088,0.6702014517516596,35.153306976775504,3.612746877097629,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * Matern(length_scale=1, nu=1.5) + WhiteKernel(noise_level=0.5)}"
+251,mutual_info,RandomForest-tiny,15,0.3130443183617409,1.2735358174877371,0.6714849587942755,1126.0,0.1127886323268206,"100 trees, 1126 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 100}"
+252,rfe_ridge,NuSVR,15,0.3079233313401267,1.2782738605404904,0.6584370654030708,102.0,1.2450980392156863,102 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+253,rf_importance,DecisionTree-tiny,15,0.3021089605730036,1.283632235771638,0.697994651371045,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+254,mutual_info,ExtraTrees-tiny,15,0.2957469355553311,1.2894698040220318,0.7267898640683081,978.0,0.1298568507157464,"100 trees, 978 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+255,rf_importance,KNN,15,0.2924257047514194,1.2925067730777264,0.6375349458648788,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+256,lasso,GradientBoosting-tiny,15,0.2907777998420762,1.294010989376343,0.720746668726439,654.0,0.1941896024464831,"100 stages, 654 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+257,rf_importance,HistGradientBoosting-tiny,15,0.2884236600978388,1.2961568323746815,0.7552427252612854,792.0,0.1603535353535353,"100 stages, 792 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 20}"
+258,mutual_info,Bagging-tiny,15,0.2875362765020725,1.2969647779730449,0.680602950510975,584.0,0.2174657534246575,"50 trees, 584 total nodes","{'max_samples': 0.7, 'n_estimators': 50}"
+259,f_regression,SVR-RBF,15,0.2855966905208977,1.2987289835509366,0.6504463416639786,120.0,1.0583333333333331,120 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+260,correlation,SVR-RBF,15,0.2855966905208976,1.2987289835509368,0.6504463416639787,120.0,1.0583333333333331,120 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+261,rf_importance,ExtraTrees-tiny,15,0.2836723349819567,1.3004769706729618,0.7492630374520384,1916.0,0.0662839248434238,"200 trees, 1916 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+262,rfe_ridge,LightGBM-tiny,15,0.2808403022828887,1.3030451810356591,0.7201935388080123,566.0,0.2243816254416961,"100 boosting trees, ~566 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100, 'num_leaves': 7}"
+263,lasso,LightGBM-tiny,15,0.2786784482370721,1.3050022426257994,0.7752115754370077,1004.0,0.1264940239043824,"100 boosting trees, ~1004 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 15}"
+264,mutual_info,HistGradientBoosting-tiny,15,0.2784997339442322,1.305163895988566,0.6868332678857422,848.0,0.1497641509433962,"100 stages, 848 total nodes","{'learning_rate': 0.1, 'max_depth': 3, 'min_samples_leaf': 10}"
+265,mutual_info,LightGBM-tiny,15,0.2742821700389644,1.308973036092519,0.686585436144927,520.0,0.2442307692307692,"50 boosting trees, ~520 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50, 'num_leaves': 7}"
+266,f_regression,HistGradientBoosting-tiny,15,0.272128104180018,1.3109142347411291,0.7968114684099731,866.0,0.1466512702078521,"100 stages, 866 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 10}"
+267,correlation,HistGradientBoosting-tiny,15,0.272128104180018,1.3109142347411291,0.7968114684099731,866.0,0.1466512702078521,"100 stages, 866 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 10}"
+268,rf_importance,OrthogonalMatchingPursuit,15,0.2712523991519004,1.3117025802714837,0.8555164880625836,16.0,7.9375,linear coefficients + intercept,{'n_nonzero_coefs': 3}
+269,rf_importance,LinearSVR,15,0.2711913800395641,1.311757494518632,0.7703870290762128,16.0,7.9375,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+270,lasso,HistGradientBoosting-tiny,15,0.2708510031416893,1.3120637750806283,0.7961958331818098,578.0,0.2197231833910034,"100 stages, 578 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'min_samples_leaf': 20}"
+271,correlation,NuSVR,15,0.2673214012145619,1.3152356041305284,0.6561657254824115,103.0,1.233009708737864,103 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+272,f_regression,NuSVR,15,0.2673214012145617,1.3152356041305286,0.656165725482412,103.0,1.233009708737864,103 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+273,mutual_info,LarsCV,15,0.267095771155898,1.3154381034554712,0.8311531136900834,16.0,7.9375,linear coefficients + intercept,{}
+274,f_regression,RandomForest-tiny,15,0.2614348247215575,1.320508547995207,0.7795056236676686,966.0,0.1314699792960662,"100 trees, 966 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 100}"
+275,correlation,RandomForest-tiny,15,0.2612381706256003,1.320684338933873,0.7796383174209697,966.0,0.1314699792960662,"100 trees, 966 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 100}"
+276,mutual_info,ExtraTree-tiny,15,0.2595859277999861,1.3221603711518315,0.8303182472557361,5.0,25.4,"single tree, 5 nodes","{'max_depth': 2, 'min_samples_leaf': 10}"
+277,f_regression,GaussianProcess,15,0.247404353738519,1.332992342750744,0.6616305532661458,55.4821242921082,2.289025548685859,gp_effective_dof: trace(K(K+sigma^2*I)^-1),{'kernel': 1**2 * RBF(length_scale=1) + WhiteKernel(noise_level=0.5)}
+278,correlation,GaussianProcess,15,0.2474043521147019,1.3329923441887908,0.6616305586021586,55.48212429211136,2.289025548685729,gp_effective_dof: trace(K(K+sigma^2*I)^-1),{'kernel': 1**2 * RBF(length_scale=1) + WhiteKernel(noise_level=0.5)}
+279,rf_importance,TweedieRegressor,15,0.246002481143676,1.334233258802601,0.8629516708810689,16.0,7.9375,linear coefficients + intercept,{'alpha': 0.001}
+280,lasso,RandomForest-tiny,15,0.235645575475734,1.343365515862363,0.8199678759822899,2058.0,0.0617103984450923,"200 trees, 2058 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 200}"
+281,f_regression,Bagging-tiny,15,0.2323953118790482,1.346218681907605,0.8021312958976774,212.0,0.5990566037735849,"20 trees, 212 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+282,correlation,Bagging-tiny,15,0.228149384568478,1.3499367833255362,0.7965921630820166,218.0,0.5825688073394495,"20 trees, 218 total nodes","{'max_samples': 1.0, 'n_estimators': 20}"
+283,mutual_info,AdaBoost-tiny,15,0.2264777912378189,1.3513977686849097,0.8068818986655656,134.0,0.9477611940298508,"22 trees, 134 total nodes","{'learning_rate': 0.5, 'n_estimators': 30}"
+284,mutual_info,KNN,15,0.2146371420101458,1.3617017106810398,0.6277721052479879,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+285,lasso,Bagging-tiny,15,0.2059377387570151,1.369222672695572,0.841557690323503,210.0,0.6047619047619047,"20 trees, 210 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+286,rfe_ridge,RandomForest-tiny,15,0.2015113837841912,1.3730336100251013,0.748173708234629,920.0,0.1380434782608695,"100 trees, 920 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 100}"
+287,lasso,DecisionTree-tiny,15,0.2000586880241205,1.374282027153505,0.9520074464979073,15.0,8.466666666666667,"single tree, 15 nodes","{'max_depth': 4, 'min_samples_leaf': 5}"
+288,f_regression,ExtraTrees-tiny,15,0.198466063558076,1.375649394257319,0.8133637412367991,2018.0,0.0629335976214073,"200 trees, 2018 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+289,rfe_ridge,BayesianRidge,15,0.1975284738265852,1.3764537381069688,0.8752957309510047,16.0,7.9375,linear coefficients + intercept,{}
+290,rf_importance,AdaBoost-tiny,15,0.1960697686607432,1.3777042052547153,0.8159718672402041,322.0,0.3944099378881988,"50 trees, 322 total nodes","{'learning_rate': 0.05, 'n_estimators': 50}"
+291,correlation,ExtraTrees-tiny,15,0.1947179457864166,1.3788620357007018,0.8086925952805535,966.0,0.1314699792960662,"100 trees, 966 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+292,lasso,GaussianProcess,15,0.1910827934109852,1.3819707164891653,0.6853404779259858,55.80711457095741,2.275695509011177,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * Matern(length_scale=1, nu=2.5) + WhiteKernel(noise_level=0.5)}"
+293,rfe_ridge,SGDRegressor,15,0.1905730865355198,1.3824060447543547,0.8844792283739389,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'l2'}"
+294,rfe_ridge,TweedieRegressor,15,0.1896402001094012,1.3832024455438017,0.8611665116111482,16.0,7.9375,linear coefficients + intercept,{'alpha': 0.1}
+295,lasso,ExtraTrees-tiny,15,0.1890245908433895,1.3837277372634995,0.8333461448158737,936.0,0.1356837606837606,"100 trees, 936 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+296,mutual_info,OrthogonalMatchingPursuitCV,15,0.1870116545259003,1.3854439604257474,0.8547424191457091,16.0,7.9375,linear coefficients + intercept,{}
+297,rfe_ridge,LinearRegression,15,0.1863763961105425,1.385985138586136,0.8961326082926834,16.0,7.9375,linear coefficients + intercept,{}
+298,rfe_ridge,RidgeCV,15,0.183058251352105,1.388808446559627,0.8932570857063306,16.0,7.9375,linear coefficients + intercept,{}
+299,f_regression,KNN,15,0.1790289352233774,1.3922291709683414,0.6971168226875158,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+300,correlation,KNN,15,0.1790289352233772,1.3922291709683416,0.6971168226875161,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+301,lasso,SVR-RBF,15,0.1765919310689184,1.394294014826387,0.7014688955855968,103.0,1.233009708737864,103 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.1, 'gamma': 0.1}"
+302,rf_importance,PassiveAggressiveRegressor,15,0.1742997724873659,1.3962333460214134,0.8610418686876771,16.0,7.9375,linear coefficients + intercept,{'C': 1}
+303,rfe_ridge,Bagging-tiny,15,0.1739489674838429,1.396529914687734,0.8038993597154933,208.0,0.6105769230769231,"20 trees, 208 total nodes","{'max_samples': 1.0, 'n_estimators': 20}"
+304,rfe_ridge,KNN,15,0.1727318084959719,1.397558406380167,0.7097399571912802,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 5, 'weights': 'uniform'}"
+305,correlation,AdaBoost-tiny,15,0.1721526966412983,1.3980474866190404,0.8897313564034846,186.0,0.6827956989247311,"30 trees, 186 total nodes","{'learning_rate': 0.05, 'n_estimators': 30}"
+306,f_regression,AdaBoost-tiny,15,0.1671494258857596,1.4022658208689351,0.8724788597628357,310.0,0.4096774193548387,"50 trees, 310 total nodes","{'learning_rate': 0.05, 'n_estimators': 50}"
+307,rfe_ridge,HistGradientBoosting-tiny,15,0.1643649090102775,1.4046080025052896,0.8078162481300863,772.0,0.1645077720207254,"100 stages, 772 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 20}"
+308,rfe_ridge,Ridge,15,0.1581082388983516,1.4098565735225494,0.8763972786493002,16.0,7.9375,linear coefficients + intercept,{'alpha': 10}
+309,lasso,NuSVR,15,0.154767729516704,1.4126508618001077,0.7081762426777627,99.0,1.2828282828282829,99 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+310,rfe_ridge,LassoLarsIC,15,0.1471538689177447,1.4189991838375935,0.9037431573158108,16.0,7.9375,linear coefficients + intercept,{}
+311,correlation,LassoCV,15,0.1410496563664081,1.4240683447805875,0.8925889135075269,16.0,7.9375,linear coefficients + intercept,{}
+312,f_regression,LassoCV,15,0.1409912459828785,1.4241167637402787,0.8926250890090511,16.0,7.9375,linear coefficients + intercept,{}
+313,rfe_ridge,PLS,15,0.1380653250952896,1.426540086409859,0.9125481813999304,4.0,31.75,3 latent components (true PLS dimensionality),{'n_components': 3}
+314,rfe_ridge,ExtraTree-tiny,15,0.1376687839746864,1.426868195241118,0.8910507595317742,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 5}"
+315,rfe_ridge,ExtraTrees-tiny,15,0.1369469803533884,1.4274652414695916,0.8280353727349076,978.0,0.1298568507157464,"100 trees, 978 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+316,lasso,ExtraTree-tiny,15,0.1335933086219479,1.4302359914298357,0.9145686841788764,15.0,8.466666666666667,"single tree, 15 nodes","{'max_depth': 4, 'min_samples_leaf': 5}"
+317,rfe_ridge,HuberRegressor,15,0.1318384723435524,1.4316836720921913,0.8391304656094293,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+318,correlation,ElasticNetCV,15,0.1313121723258755,1.4321175665668335,0.8936045957539462,16.0,7.9375,linear coefficients + intercept,{}
+319,f_regression,ElasticNetCV,15,0.1312775862853058,1.432146075532701,0.893632497194291,16.0,7.9375,linear coefficients + intercept,{}
+320,rfe_ridge,GradientBoosting-tiny,15,0.1289204611733015,1.4340876973055807,0.6830881375159172,674.0,0.1884272997032641,"100 stages, 674 total nodes","{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 100}"
+321,mutual_info,ElasticNet,15,0.1246469686665053,1.4376011909055997,0.8687430799086602,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.01, 'l1_ratio': 0.8}"
+322,mutual_info,DecisionTree-tiny,15,0.1239223357553729,1.4381961038130695,0.7932478378934454,19.0,6.684210526315789,"single tree, 19 nodes","{'max_depth': 4, 'min_samples_leaf': 5}"
+323,f_regression,LarsCV,15,0.1166742868544505,1.44413315962312,0.8936939865428967,16.0,7.9375,linear coefficients + intercept,{}
+324,correlation,LarsCV,15,0.1166742868544505,1.44413315962312,0.8936939865428966,16.0,7.9375,linear coefficients + intercept,{}
+325,correlation,LassoLarsCV,15,0.1154338386500154,1.4451467970030778,0.8927217925726806,16.0,7.9375,linear coefficients + intercept,{}
+326,f_regression,LassoLarsCV,15,0.1154338386500148,1.4451467970030782,0.892721792572681,16.0,7.9375,linear coefficients + intercept,{}
+327,correlation,OrthogonalMatchingPursuit,15,0.1111797238499767,1.448617677271415,0.957638603111614,16.0,7.9375,linear coefficients + intercept,{'n_nonzero_coefs': 3}
+328,f_regression,OrthogonalMatchingPursuit,15,0.1111797238499767,1.448617677271415,0.957638603111614,16.0,7.9375,linear coefficients + intercept,{'n_nonzero_coefs': 3}
+329,rf_importance,ElasticNetCV,15,0.1094078162461508,1.4500609041815609,0.8868915235525756,16.0,7.9375,linear coefficients + intercept,{}
+330,rf_importance,LarsCV,15,0.1013334802177001,1.4566193836262424,0.8882015307549588,16.0,7.9375,linear coefficients + intercept,{}
+331,rf_importance,LassoCV,15,0.100827906835006,1.4570290597556836,0.8962404269976281,16.0,7.9375,linear coefficients + intercept,{}
+332,rf_importance,LassoLarsCV,15,0.0998154022969889,1.4578491660970347,0.8974506734824681,16.0,7.9375,linear coefficients + intercept,{}
+333,correlation,ExtraTree-tiny,15,0.0947934095762178,1.4619100693760108,0.9693668261138922,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+334,rfe_ridge,LarsCV,15,0.0883021290634625,1.4671424198991174,0.8931321876008999,16.0,7.9375,linear coefficients + intercept,{}
+335,rfe_ridge,OrthogonalMatchingPursuit,15,0.082396204607209,1.4718867794481385,0.9753627868024995,16.0,7.9375,linear coefficients + intercept,{'n_nonzero_coefs': 10}
+336,rf_importance,OrthogonalMatchingPursuitCV,15,0.0823518684477676,1.4719223378334727,0.934231173433517,16.0,7.9375,linear coefficients + intercept,{}
+337,f_regression,DecisionTree-tiny,15,0.0776392526911124,1.4756970534143825,0.947966721793347,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+338,correlation,DecisionTree-tiny,15,0.0776392526911123,1.4756970534143827,0.9479667217933472,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+339,mutual_info,LassoLars,15,0.0736697868011078,1.4788690446000523,0.8843080596589683,16.0,7.9375,linear coefficients + intercept,{'alpha': 0.01}
+340,mutual_info,Lasso,15,0.073661894595238,1.4788753444669511,0.8843146190306705,16.0,7.9375,linear coefficients + intercept,{'alpha': 0.01}
+341,rfe_ridge,AdaBoost-tiny,15,0.0717311117517047,1.4804157651790668,0.9412531575848968,182.0,0.6978021978021978,"30 trees, 182 total nodes","{'learning_rate': 0.05, 'n_estimators': 30}"
+342,rfe_ridge,ElasticNetCV,15,0.0646655306612389,1.48603922671996,0.9016811393642102,16.0,7.9375,linear coefficients + intercept,{}
+343,rfe_ridge,LinearSVR,15,0.0638826512148746,1.4866610076263531,0.864587125221855,16.0,7.9375,linear coefficients + intercept,"{'C': 1, 'epsilon': 0.01}"
+344,rfe_ridge,LassoCV,15,0.0618097508623991,1.4883060983935306,0.905521469302242,16.0,7.9375,linear coefficients + intercept,{}
+345,mutual_info,LinearRegression,15,0.0546963669833039,1.493937632513728,0.776803824362143,16.0,7.9375,linear coefficients + intercept,{}
+346,f_regression,OrthogonalMatchingPursuitCV,15,0.0424396913170896,1.5035915344753183,1.0044104358094712,16.0,7.9375,linear coefficients + intercept,{}
+347,correlation,OrthogonalMatchingPursuitCV,15,0.0424396913170896,1.5035915344753183,1.0044104358094712,16.0,7.9375,linear coefficients + intercept,{}
+348,rfe_ridge,LassoLarsCV,15,0.0360767919233606,1.5085788761973715,0.9150030636730968,16.0,7.9375,linear coefficients + intercept,{}
+349,lasso,KNN,15,0.0216410854995251,1.5198331296055312,0.744869284329315,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 7, 'weights': 'uniform'}"
+350,lasso,LassoCV,15,0.0188526209583018,1.5219974607596969,0.9465927219664646,16.0,7.9375,linear coefficients + intercept,{}
+351,lasso,LarsCV,15,0.0186295404171227,1.5221704769279598,0.9472869094352884,16.0,7.9375,linear coefficients + intercept,{}
+352,lasso,LassoLarsCV,15,0.0186295404171227,1.5221704769279598,0.9472869094352884,16.0,7.9375,linear coefficients + intercept,{}
+353,lasso,ElasticNetCV,15,0.0180649169763894,1.522608298109246,0.9443493319351294,16.0,7.9375,linear coefficients + intercept,{}
+354,mutual_info,BayesianRidge,15,0.016476402455302,1.5238393917036124,0.771053178323684,16.0,7.9375,linear coefficients + intercept,{}
+355,rf_importance,LassoLars,15,0.0143721419766121,1.525468656996514,0.951256852331378,16.0,7.9375,linear coefficients + intercept,{'alpha': 0.001}
+356,rf_importance,Lasso,15,0.0143702369794727,1.525470131189841,0.9512553883217112,16.0,7.9375,linear coefficients + intercept,{'alpha': 0.001}
+357,rf_importance,ElasticNet,15,0.011438295980366,1.5277373452023544,0.952588437891026,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.001, 'l1_ratio': 0.2}"
+358,lasso,AdaBoost-tiny,15,0.0058858311273112,1.532021766693162,0.9576745405840522,279.0,0.4551971326164875,"49 trees, 279 total nodes","{'learning_rate': 0.5, 'n_estimators': 50}"
+359,rfe_ridge,ElasticNet,15,-0.0056706599999905,1.5409008468059937,0.9384035617039512,16.0,7.9375,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+360,mutual_info,LassoLarsIC,15,-0.0065349099171878,1.5415628117474378,0.7592342597734842,16.0,7.9375,linear coefficients + intercept,{}
+361,correlation,Lasso,15,-0.0177949692727585,1.550161526115846,0.9949494523422748,16.0,7.9375,linear coefficients + intercept,{'alpha': 1}
+362,f_regression,Lasso,15,-0.0178118361614325,1.5501743706937587,0.9949423381601816,16.0,7.9375,linear coefficients + intercept,{'alpha': 1}
+363,correlation,LassoLars,15,-0.0178209790370704,1.5501813331887684,0.9949530598505832,16.0,7.9375,linear coefficients + intercept,{'alpha': 1}
+364,f_regression,LassoLars,15,-0.0178209790370704,1.5501813331887684,0.9949530598505832,16.0,7.9375,linear coefficients + intercept,{'alpha': 1}
+365,rfe_ridge,DecisionTree-tiny,15,-0.0214397271803137,1.5529346358825913,0.8995073665418936,7.0,18.142857142857142,"single tree, 7 nodes","{'max_depth': 2, 'min_samples_leaf': 10}"
+366,correlation,ElasticNet,15,-0.0222566031382742,1.5535554759628218,0.9901886434546266,16.0,7.9375,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+367,f_regression,ElasticNet,15,-0.0222689370046218,1.553564848016643,0.9901926196003392,16.0,7.9375,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+368,lasso,LassoLars,15,-0.0324672792445992,1.5612949404592804,0.9849014605770248,16.0,7.9375,linear coefficients + intercept,{'alpha': 1}
+369,correlation,Dummy-baseline,15,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+370,mutual_info,Dummy-baseline,15,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+371,lasso,Dummy-baseline,15,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+372,lasso,Lasso,15,-0.0324672792445992,1.5612949404592804,0.9849014605770248,16.0,7.9375,linear coefficients + intercept,{'alpha': 1}
+373,lasso,ElasticNet,15,-0.0324672792445992,1.5612949404592804,0.9849014605770248,16.0,7.9375,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+374,rfe_ridge,Dummy-baseline,15,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+375,rf_importance,Dummy-baseline,15,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+376,f_regression,Dummy-baseline,15,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+377,rfe_ridge,Lasso,15,-0.0355643373024372,1.5636348695002846,0.9675622428387196,16.0,7.9375,linear coefficients + intercept,{'alpha': 1}
+378,rfe_ridge,LassoLars,15,-0.0355701633541198,1.5636392679738615,0.967569011772372,16.0,7.9375,linear coefficients + intercept,{'alpha': 1}
+379,f_regression,ExtraTree-tiny,15,-0.051656545810192,1.575737129488197,1.0070315495055984,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+380,mutual_info,RidgeCV,15,-0.0612574515470503,1.5829134895826067,0.8214433758832689,16.0,7.9375,linear coefficients + intercept,{}
+381,mutual_info,Ridge,15,-0.0647324416351156,1.5855029240435798,0.8037050825915355,16.0,7.9375,linear coefficients + intercept,{'alpha': 0.1}
+382,mutual_info,TweedieRegressor,15,-0.0724222779488072,1.5912181265362813,0.8035246205105897,16.0,7.9375,linear coefficients + intercept,{'alpha': 0.001}
+383,mutual_info,SGDRegressor,15,-0.0828547971589508,1.598939076114483,0.8124190344811454,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'l2'}"
+384,mutual_info,ElasticNetCV,15,-0.1084089564486396,1.6176956477224282,0.827768998869414,16.0,7.9375,linear coefficients + intercept,{}
+385,rfe_ridge,OrthogonalMatchingPursuitCV,15,-0.1128914993822058,1.6209634278858829,1.041215485822866,16.0,7.9375,linear coefficients + intercept,{}
+386,mutual_info,HuberRegressor,15,-0.1325590323164867,1.63522390680833,0.7565850987041877,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.35}"
+387,mutual_info,LinearSVR,15,-0.1661065587158985,1.6592656512089408,0.7683353279720225,16.0,7.9375,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+388,mutual_info,LassoCV,15,-0.1668070725009358,1.659763960708571,0.864219593780576,16.0,7.9375,linear coefficients + intercept,{}
+389,mutual_info,LassoLarsCV,15,-0.169806187686367,1.6618956878894615,0.8662472171159808,16.0,7.9375,linear coefficients + intercept,{}
+390,rfe_ridge,PassiveAggressiveRegressor,15,-0.1906841447723495,1.67666033055136,1.0741012190124628,16.0,7.9375,linear coefficients + intercept,{'C': 0.01}
+391,mutual_info,OrthogonalMatchingPursuit,15,-0.2019378777328246,1.6845651611008556,0.8509208983389156,16.0,7.9375,linear coefficients + intercept,{'n_nonzero_coefs': 10}
+392,mutual_info,PLS,15,-0.3446502848995569,1.781769325501715,0.933619857065492,8.0,15.875,7 latent components (true PLS dimensionality),{'n_components': 7}
+393,rfe_ridge,RANSACRegressor,15,-0.4401498871380394,1.8439564134966435,1.0256239843041297,16.0,7.9375,RANSAC inlier-fitted LinearRegression,{}
+394,mutual_info,PassiveAggressiveRegressor,15,-0.4845252129222854,1.8721497870222208,1.0828385459284713,16.0,7.9375,linear coefficients + intercept,{'C': 1}
+395,f_regression,KernelRidge,15,-0.7200032023385701,2.015168804864568,0.9523811515234024,11.127154320499743,11.413520145579875,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+396,correlation,KernelRidge,15,-0.7200032023385703,2.015168804864568,0.9523811515234056,11.12715432049974,11.41352014557988,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+397,lasso,KernelRidge,15,-0.7379950634591435,2.0256810863204158,1.0050209050056536,21.510375505503927,5.904127520577412,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 0.1, 'gamma': 0.01}"
+398,rf_importance,SmallMLP,15,-0.7767588457716479,2.0481466383289013,1.3845323988311489,137.0,0.927007299270073,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+399,mutual_info,RANSACRegressor,15,-1.81761403937664,2.579215055110195,1.1849950500677469,16.0,7.9375,RANSAC inlier-fitted LinearRegression,{}
+400,rf_importance,RANSACRegressor,15,-2.4239350146107435,2.8432140756789326,1.3323514206162426,16.0,7.9375,RANSAC inlier-fitted LinearRegression,{}
+401,rfe_ridge,SmallMLP,15,-2.5329646934640584,2.888128103389539,1.7178380603315977,137.0,0.927007299270073,"layers (8,)","{'alpha': 0.1, 'hidden_layer_sizes': (8,)}"
+402,mutual_info,SmallMLP,15,-2.5663100186893906,2.901725662966143,1.4502921168201548,137.0,0.927007299270073,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+403,f_regression,RANSACRegressor,15,-82.37742472909837,14.03043197054033,2.2579404294195355,16.0,7.9375,RANSAC inlier-fitted LinearRegression,{}
+404,correlation,RANSACRegressor,15,-82.37742472909866,14.030431970540356,2.257940429419546,16.0,7.9375,RANSAC inlier-fitted LinearRegression,{}
+405,correlation,TweedieRegressor,15,-101.29368422885643,15.540722804068224,2.402315894470552,16.0,7.9375,linear coefficients + intercept,{'alpha': 1}
+406,f_regression,TweedieRegressor,15,-101.29368422885646,15.540722804068226,2.4023158944705467,16.0,7.9375,linear coefficients + intercept,{'alpha': 1}
+407,f_regression,PassiveAggressiveRegressor,15,-196.275074632124,21.581563877756768,3.126246276882923,16.0,7.9375,linear coefficients + intercept,{'C': 0.1}
+408,correlation,PassiveAggressiveRegressor,15,-196.27507463212467,21.581563877756807,3.126246276882927,16.0,7.9375,linear coefficients + intercept,{'C': 0.1}
+409,correlation,Ridge,15,-202.3914447078819,21.913570453989458,3.0280729305590017,16.0,7.9375,linear coefficients + intercept,{'alpha': 50}
+410,f_regression,Ridge,15,-202.3914447078819,21.913570453989458,3.0280729305590017,16.0,7.9375,linear coefficients + intercept,{'alpha': 50}
+411,lasso,RANSACRegressor,15,-333.6097291175261,28.10710305591064,3.97801240900227,16.0,7.9375,RANSAC inlier-fitted LinearRegression,{}
+412,lasso,TweedieRegressor,15,-350.4077078239815,28.8039763337625,3.689635019488583,16.0,7.9375,linear coefficients + intercept,{'alpha': 1}
+413,correlation,BayesianRidge,15,-390.58366769400186,30.40598582851962,3.8561104429996416,16.0,7.9375,linear coefficients + intercept,{}
+414,f_regression,BayesianRidge,15,-390.5836676940032,30.405985828519675,3.8561104429996473,16.0,7.9375,linear coefficients + intercept,{}
+415,correlation,PLS,15,-456.2052665865474,32.85507145570576,4.13246694732716,8.0,15.875,7 latent components (true PLS dimensionality),{'n_components': 7}
+416,f_regression,PLS,15,-456.2052665865477,32.85507145570578,4.132466947327162,8.0,15.875,7 latent components (true PLS dimensionality),{'n_components': 7}
+417,correlation,RidgeCV,15,-463.83297536667646,33.128003895847925,4.131664687913436,16.0,7.9375,linear coefficients + intercept,{}
+418,f_regression,RidgeCV,15,-463.8329753666864,33.12800389584828,4.131664687913625,16.0,7.9375,linear coefficients + intercept,{}
+419,correlation,LinearRegression,15,-546.0517691657263,35.938588602845535,4.417102654514341,16.0,7.9375,linear coefficients + intercept,{}
+420,f_regression,LinearRegression,15,-546.0517691657284,35.9385886028456,4.417102654514348,16.0,7.9375,linear coefficients + intercept,{}
+421,correlation,SGDRegressor,15,-640.261308658369,38.91027698289316,4.711332892220019,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+422,f_regression,SGDRegressor,15,-640.2613086583691,38.910276982893166,4.711332892220021,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+423,lasso,Ridge,15,-713.8596494457626,41.08253139077089,4.903287646540086,16.0,7.9375,linear coefficients + intercept,{'alpha': 50}
+424,correlation,LassoLarsIC,15,-734.3137221414636,41.66612756820903,4.95528309049817,16.0,7.9375,linear coefficients + intercept,{}
+425,f_regression,LassoLarsIC,15,-734.3137221414648,41.66612756820906,4.955283090498175,16.0,7.9375,linear coefficients + intercept,{}
+426,lasso,LassoLarsIC,15,-1182.4294150109838,52.85888327348154,6.095612056207452,16.0,7.9375,linear coefficients + intercept,{}
+427,lasso,BayesianRidge,15,-1182.8214048852888,52.86763682956053,6.0671285466919,16.0,7.9375,linear coefficients + intercept,{}
+428,lasso,OrthogonalMatchingPursuitCV,15,-1374.5400404823054,56.98800086565488,6.50592883159721,16.0,7.9375,linear coefficients + intercept,{}
+429,lasso,RidgeCV,15,-1429.161265721896,58.10845247394666,6.613733929693152,16.0,7.9375,linear coefficients + intercept,{}
+430,lasso,PLS,15,-1459.728360913747,58.72615060833408,6.662935943330022,4.0,31.75,3 latent components (true PLS dimensionality),{'n_components': 3}
+431,lasso,SGDRegressor,15,-1657.464135103042,62.57485413788563,7.066807991355377,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'l2'}"
+432,lasso,OrthogonalMatchingPursuit,15,-1857.429561643764,66.23992871254663,7.385902429022764,16.0,7.9375,linear coefficients + intercept,{'n_nonzero_coefs': 10}
+433,lasso,LinearRegression,15,-1879.1764980868568,66.62636408722877,7.485287421348631,16.0,7.9375,linear coefficients + intercept,{}
+434,lasso,HuberRegressor,15,-2456.592789113568,76.17312377466557,8.3264452960277,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+435,lasso,PassiveAggressiveRegressor,15,-2499.9802337860174,76.84257922035137,8.622318402808204,16.0,7.9375,linear coefficients + intercept,{'C': 0.01}
+436,lasso,LinearSVR,15,-2543.845125616358,77.51352413253655,8.441281193585317,16.0,7.9375,linear coefficients + intercept,"{'C': 1, 'epsilon': 0.01}"
+437,lasso,SmallMLP,15,-3401.4829408204982,89.62822218144996,10.73519008925836,69.0,1.8405797101449275,"layers (4,)","{'alpha': 1.0, 'hidden_layer_sizes': (4,)}"
+438,correlation,LinearSVR,15,-3714.5819780254033,93.66130998572892,10.032723732970958,16.0,7.9375,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.01}"
+439,f_regression,LinearSVR,15,-3714.581978025411,93.661309985729,10.032723732970965,16.0,7.9375,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.01}"
+440,f_regression,SmallMLP,15,-4553.029840873761,103.6918779216536,11.501474049870424,137.0,0.927007299270073,"layers (8,)","{'alpha': 0.1, 'hidden_layer_sizes': (8,)}"
+441,correlation,HuberRegressor,15,-4743.284248775186,105.83569219781909,11.257636748339438,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+442,f_regression,HuberRegressor,15,-4743.284248775226,105.83569219781955,11.257636748339484,16.0,7.9375,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+443,correlation,SmallMLP,15,-18522.01545677492,209.12340828836292,21.85299291192336,137.0,0.927007299270073,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+444,mutual_info,OrthogonalMatchingPursuit,20,0.5100446089148759,1.0755363037436547,0.7809119489228176,21.0,6.047619047619048,linear coefficients + intercept,{'n_nonzero_coefs': 5}
+445,rf_importance,GradientBoosting-tiny,20,0.4997164016569778,1.0868132794591785,0.543179724110078,664.0,0.1912650602409638,"100 stages, 664 total nodes","{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 100}"
+446,rf_importance,KernelRidge,20,0.4849449208836305,1.1027413021385903,0.6881692193860333,12.2875055331765,10.335702365064869,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+447,mutual_info,GradientBoosting-tiny,20,0.4581995031328137,1.1310101523832996,0.5288398851315756,680.0,0.1867647058823529,"100 stages, 680 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+448,mutual_info,GaussianProcess,20,0.450047959972889,1.139486574187104,0.5214878336083892,29.575603225345816,4.294079787057836,gp_effective_dof: trace(K(K+sigma^2*I)^-1),{'kernel': 1**2 * RBF(length_scale=1) + WhiteKernel(noise_level=0.5)}
+449,correlation,GradientBoosting-tiny,20,0.4471547147008188,1.14248000744663,0.6252285387200736,674.0,0.1884272997032641,"100 stages, 674 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+450,mutual_info,KernelRidge,20,0.4383336689863704,1.151558484074902,0.7626891009371528,11.4562954308791,11.085607975653842,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+451,f_regression,LightGBM-tiny,20,0.4336550652137964,1.1563447000065157,0.6406406926816139,954.0,0.1331236897274633,"100 boosting trees, ~954 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+452,correlation,LightGBM-tiny,20,0.4293669249568764,1.1607141374652516,0.6494780529902572,954.0,0.1331236897274633,"100 boosting trees, ~954 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+453,lasso,LightGBM-tiny,20,0.4281516051023638,1.1619495098186394,0.6297602355957733,1042.0,0.1218809980806142,"100 boosting trees, ~1042 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 15}"
+454,f_regression,GradientBoosting-tiny,20,0.4210772575827085,1.1691146677522404,0.6374940253491441,674.0,0.1884272997032641,"100 stages, 674 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+455,rf_importance,KNN,20,0.4094508870969628,1.1807958403892698,0.5730200561734854,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+456,rf_importance,GaussianProcess,20,0.4077048915280524,1.1825401006452003,0.5465801854186576,29.3494636519864,4.327165957985216,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+457,rf_importance,LightGBM-tiny,20,0.4033116805952261,1.1869176061627895,0.6098513441361697,948.0,0.1339662447257384,"100 boosting trees, ~948 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+458,mutual_info,NuSVR,20,0.3965692295843809,1.193604726633033,0.5322590016096501,109.0,1.165137614678899,109 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+459,rf_importance,PLS,20,0.3946449923988938,1.1955063122147112,0.7934934031494753,8.0,15.875,7 latent components (true PLS dimensionality),{'n_components': 7}
+460,rf_importance,SVR-RBF,20,0.3937153931992537,1.1964238856822431,0.5417512376351302,107.0,1.1869158878504673,107 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+461,rfe_ridge,KernelRidge,20,0.3933450087620804,1.196789282662641,0.7646557676456286,12.85186204932642,9.881836539527454,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+462,mutual_info,OrthogonalMatchingPursuitCV,20,0.3916633312692028,1.19844691409506,0.8036738769136605,21.0,6.047619047619048,linear coefficients + intercept,{}
+463,mutual_info,SVR-RBF,20,0.3911123576122129,1.198989511038841,0.5424191682634995,108.0,1.1759259259259258,108 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 0.1}"
+464,rf_importance,NuSVR,20,0.3753407035835374,1.2144185928801594,0.5549624248203818,111.0,1.1441441441441442,111 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+465,rf_importance,BayesianRidge,20,0.3601957290269474,1.2290523210008344,0.7552156281319069,21.0,6.047619047619048,linear coefficients + intercept,{}
+466,mutual_info,LightGBM-tiny,20,0.3548444548805123,1.234181468341409,0.6286290204521537,314.0,0.4044585987261146,"50 boosting trees, ~314 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 50, 'num_leaves': 7}"
+467,rf_importance,RidgeCV,20,0.3546713178950429,1.234347062612653,0.7639744759862387,21.0,6.047619047619048,linear coefficients + intercept,{}
+468,rfe_ridge,LightGBM-tiny,20,0.3451649155887923,1.243405470415071,0.6322068430373546,1002.0,0.1267465069860279,"100 boosting trees, ~1002 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+469,rf_importance,SGDRegressor,20,0.3428848922087395,1.245568251669021,0.7607349048288137,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+470,f_regression,RandomForest-tiny,20,0.339935768197994,1.248360169665638,0.7105243322744796,980.0,0.1295918367346938,"100 trees, 980 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 100}"
+471,correlation,RandomForest-tiny,20,0.3375451951668523,1.2506187369504562,0.7124205672213759,980.0,0.1295918367346938,"100 trees, 980 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 100}"
+472,mutual_info,RandomForest-tiny,20,0.3289859563144539,1.2586721087822743,0.6370435283913566,1108.0,0.1146209386281588,"100 trees, 1108 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 100}"
+473,rf_importance,LassoLarsIC,20,0.327680783972091,1.2598956196622175,0.75798200410471,21.0,6.047619047619048,linear coefficients + intercept,{}
+474,rf_importance,RandomForest-tiny,20,0.3253512089862631,1.2620764908879396,0.6481448584496656,2158.0,0.0588507877664504,"200 trees, 2158 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 200}"
+475,rf_importance,Bagging-tiny,20,0.3159713285281041,1.2708197532627905,0.6865174510930786,238.0,0.5336134453781513,"20 trees, 238 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+476,correlation,ExtraTree-tiny,20,0.31298663576589,1.2735892847723027,0.7776981731730164,15.0,8.466666666666667,"single tree, 15 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+477,rfe_ridge,NuSVR,20,0.3096086694553319,1.2767164920417184,0.6282583179322558,99.0,1.2828282828282829,99 support vectors (of 127 training points),"{'C': 50, 'nu': 0.3}"
+478,correlation,HistGradientBoosting-tiny,20,0.3089749569327301,1.2773023088211977,0.7527944867346611,802.0,0.1583541147132169,"100 stages, 802 total nodes","{'learning_rate': 0.1, 'max_depth': 3, 'min_samples_leaf': 10}"
+479,f_regression,HistGradientBoosting-tiny,20,0.3088614956846426,1.2774071663565425,0.7529911020760861,802.0,0.1583541147132169,"100 stages, 802 total nodes","{'learning_rate': 0.1, 'max_depth': 3, 'min_samples_leaf': 10}"
+480,rf_importance,ExtraTrees-tiny,20,0.3072116580141052,1.278930926226344,0.7390908316171771,948.0,0.1339662447257384,"100 trees, 948 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+481,mutual_info,Bagging-tiny,20,0.3050783541370482,1.2808985193672244,0.6920679640515083,232.0,0.5474137931034483,"20 trees, 232 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+482,rf_importance,Ridge,20,0.3048224204638518,1.2811343696150712,0.7985880493759027,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 1}
+483,mutual_info,HistGradientBoosting-tiny,20,0.3038891689199786,1.2819940202014497,0.6790635552985571,592.0,0.214527027027027,"100 stages, 592 total nodes","{'learning_rate': 0.05, 'max_depth': 2, 'min_samples_leaf': 20}"
+484,rf_importance,HistGradientBoosting-tiny,20,0.3038161621563772,1.2820612449710738,0.7246361348117587,816.0,0.1556372549019608,"100 stages, 816 total nodes","{'learning_rate': 0.1, 'max_depth': 3, 'min_samples_leaf': 10}"
+485,rf_importance,DecisionTree-tiny,20,0.3024406404654385,1.2833271698115054,0.6758350620927506,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+486,rfe_ridge,GaussianProcess,20,0.3012961351958393,1.284379533826938,0.5938491357063644,48.38447040219387,2.624809136987919,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * Matern(length_scale=1, nu=2.5) + WhiteKernel(noise_level=0.5)}"
+487,mutual_info,ExtraTrees-tiny,20,0.2991039027758196,1.286392871287834,0.7171781769174287,992.0,0.1280241935483871,"100 trees, 992 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+488,lasso,SVR-RBF,20,0.2959357938096761,1.2892968950513424,0.6418745751133388,100.0,1.27,100 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.1, 'gamma': 0.1}"
+489,lasso,HistGradientBoosting-tiny,20,0.2950493486715023,1.2901082780502948,0.7638265678383784,784.0,0.1619897959183673,"100 stages, 784 total nodes","{'learning_rate': 0.1, 'max_depth': 3, 'min_samples_leaf': 20}"
+490,lasso,GaussianProcess,20,0.2936581060350035,1.2913806855310477,0.6216970962988707,62.15361905661713,2.0433242975652446,gp_effective_dof: trace(K(K+sigma^2*I)^-1),{'kernel': 1**2 * RBF(length_scale=1) + WhiteKernel(noise_level=0.5)}
+491,mutual_info,ExtraTree-tiny,20,0.2918593886155525,1.2930239067871694,0.8131772662995006,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+492,lasso,RandomForest-tiny,20,0.2887688135144682,1.2958424407926843,0.7475122005331538,1924.0,0.066008316008316,"200 trees, 1924 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 200}"
+493,correlation,Bagging-tiny,20,0.2864782463215685,1.2979274366747104,0.7615952016340612,230.0,0.5521739130434783,"20 trees, 230 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+494,rfe_ridge,SVR-RBF,20,0.2838886028111962,1.3002806411322756,0.6272893871372536,101.0,1.2574257425742574,101 support vectors (of 127 training points),"{'C': 50, 'epsilon': 0.05, 'gamma': 0.1}"
+495,f_regression,Bagging-tiny,20,0.2819110943902759,1.30207473576045,0.7566527123712117,246.0,0.516260162601626,"20 trees, 246 total nodes","{'max_samples': 1.0, 'n_estimators': 20}"
+496,correlation,SVR-RBF,20,0.2779931690412291,1.305621992988596,0.6412419653285573,114.0,1.1140350877192982,114 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+497,f_regression,SVR-RBF,20,0.2779931690412293,1.305621992988596,0.641241965328557,114.0,1.1140350877192982,114 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+498,mutual_info,LarsCV,20,0.2696861571381123,1.3131113952082416,0.8091875314042623,21.0,6.047619047619048,linear coefficients + intercept,{}
+499,f_regression,ExtraTrees-tiny,20,0.2677898207141085,1.3148151056301705,0.7526226362758227,2008.0,0.0632470119521912,"200 trees, 2008 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+500,rf_importance,OrthogonalMatchingPursuit,20,0.266692029175626,1.315800377570799,0.8846173721548498,21.0,6.047619047619048,linear coefficients + intercept,{'n_nonzero_coefs': 5}
+501,correlation,ExtraTrees-tiny,20,0.2611161659210762,1.3207933883217406,0.7490189599220143,1000.0,0.127,"100 trees, 1000 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+502,correlation,GaussianProcess,20,0.2560505790534927,1.3253131553351083,0.6433933915781835,61.4253141391654,2.067551493709391,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+503,f_regression,GaussianProcess,20,0.2560505757268292,1.325313158298261,0.6433933932177398,61.42531413916463,2.0675514937094173,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+504,rf_importance,ExtraTree-tiny,20,0.2535161272244967,1.3275687431123353,0.8716095249141549,15.0,8.466666666666667,"single tree, 15 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+505,mutual_info,KNN,20,0.2514724932039515,1.3293847303081658,0.5984125686335569,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+506,f_regression,NuSVR,20,0.2453013681500009,1.3348534404960055,0.6773089612581434,105.0,1.2095238095238094,105 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+507,correlation,NuSVR,20,0.24530136815,1.3348534404960066,0.6773089612581437,105.0,1.2095238095238094,105 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+508,lasso,NuSVR,20,0.2449106529284945,1.3351989294438535,0.702836501147855,102.0,1.2450980392156863,102 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+509,mutual_info,TweedieRegressor,20,0.2428794347406936,1.3369935905063846,0.7664042149947532,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 0.1}
+510,mutual_info,Ridge,20,0.2424923958713173,1.3373352813783526,0.7555485926586694,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 10}
+511,rf_importance,LinearRegression,20,0.2418863082456362,1.3378701804972233,0.8060354691159282,21.0,6.047619047619048,linear coefficients + intercept,{}
+512,lasso,GradientBoosting-tiny,20,0.2413317452829365,1.338359419530199,0.7153928968878072,1302.0,0.097542242703533,"100 stages, 1302 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100}"
+513,rf_importance,TweedieRegressor,20,0.2292295069913774,1.348991906538528,0.8337740381127506,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 0.01}
+514,rfe_ridge,RandomForest-tiny,20,0.225978182555302,1.3518341240120495,0.7223559779673969,1134.0,0.1119929453262786,"100 trees, 1134 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 100}"
+515,mutual_info,LinearRegression,20,0.206312046158841,1.3688999205528662,0.6969464585257324,21.0,6.047619047619048,linear coefficients + intercept,{}
+516,rf_importance,AdaBoost-tiny,20,0.2003739470747781,1.3740111963213728,0.8151802242187275,186.0,0.6827956989247311,"30 trees, 186 total nodes","{'learning_rate': 0.05, 'n_estimators': 30}"
+517,f_regression,DecisionTree-tiny,20,0.2002494546603928,1.374118150886785,0.8388697982544193,13.0,9.76923076923077,"single tree, 13 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+518,correlation,DecisionTree-tiny,20,0.2002494546603925,1.374118150886785,0.8388697982544193,13.0,9.76923076923077,"single tree, 13 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+519,rfe_ridge,GradientBoosting-tiny,20,0.199985317041978,1.3743450505957069,0.6170856638393836,686.0,0.1851311953352769,"100 stages, 686 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+520,rfe_ridge,Bagging-tiny,20,0.195801857854739,1.377933747000928,0.7635408382932842,222.0,0.5720720720720721,"20 trees, 222 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+521,lasso,ExtraTrees-tiny,20,0.1956398944444963,1.3780724961483584,0.8237711446563803,942.0,0.1348195329087048,"100 trees, 942 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+522,mutual_info,PLS,20,0.1952550705256194,1.3784021071281245,0.8583915475025529,4.0,31.75,3 latent components (true PLS dimensionality),{'n_components': 3}
+523,mutual_info,BayesianRidge,20,0.19031920395843,1.3826228285594957,0.691507282789643,21.0,6.047619047619048,linear coefficients + intercept,{}
+524,mutual_info,DecisionTree-tiny,20,0.1876226561671777,1.3849232471543558,0.7504220822136376,13.0,9.76923076923077,"single tree, 13 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+525,correlation,AdaBoost-tiny,20,0.179714708666252,1.3916475711426366,0.8827337367077932,158.0,0.8037974683544303,"24 trees, 158 total nodes","{'learning_rate': 0.5, 'n_estimators': 50}"
+526,lasso,Bagging-tiny,20,0.1794622669417024,1.39186169352902,0.7890715645785837,212.0,0.5990566037735849,"20 trees, 212 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+527,rfe_ridge,SGDRegressor,20,0.1776246551928003,1.393419373872315,0.8563856324081595,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+528,f_regression,ExtraTree-tiny,20,0.1708929827153323,1.3991107687121642,0.8672228898981946,13.0,9.76923076923077,"single tree, 13 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+529,mutual_info,AdaBoost-tiny,20,0.1690366266981772,1.4006761851586078,0.8361657669715692,166.0,0.7650602409638554,"26 trees, 166 total nodes","{'learning_rate': 0.5, 'n_estimators': 50}"
+530,correlation,KNN,20,0.1685888782700745,1.40105349787847,0.6907843597316533,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+531,f_regression,KNN,20,0.1685888782700743,1.4010534978784703,0.6907843597316534,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+532,rfe_ridge,HistGradientBoosting-tiny,20,0.1669238555523035,1.4024557037627663,0.7791049775917073,920.0,0.1380434782608695,"100 stages, 920 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 10}"
+533,mutual_info,SGDRegressor,20,0.1633943501559238,1.4054234655799067,0.7482499334000857,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'l2'}"
+534,rfe_ridge,KNN,20,0.1602701251768956,1.4080452309374083,0.6508783218246961,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 9, 'weights': 'uniform'}"
+535,rfe_ridge,AdaBoost-tiny,20,0.1572857096193993,1.410545121182854,0.8921895031740449,200.0,0.635,"30 trees, 200 total nodes","{'learning_rate': 0.5, 'n_estimators': 30}"
+536,rfe_ridge,BayesianRidge,20,0.1570628384666818,1.4107316310345603,0.8358336499154692,21.0,6.047619047619048,linear coefficients + intercept,{}
+537,rfe_ridge,PLS,20,0.1567003239957861,1.411034948815234,0.8921003096894345,8.0,15.875,7 latent components (true PLS dimensionality),{'n_components': 7}
+538,lasso,DecisionTree-tiny,20,0.1550095654853749,1.4124487550883946,0.8216559749267188,11.0,11.545454545454543,"single tree, 11 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+539,f_regression,AdaBoost-tiny,20,0.1510128339944857,1.4157851945482898,0.8879412725667423,196.0,0.6479591836734694,"30 trees, 196 total nodes","{'learning_rate': 0.5, 'n_estimators': 30}"
+540,rf_importance,LarsCV,20,0.149843618014794,1.4167597611825808,0.817873129278297,21.0,6.047619047619048,linear coefficients + intercept,{}
+541,rfe_ridge,ExtraTrees-tiny,20,0.1494609495005349,1.4170785780324209,0.8255763210653345,890.0,0.1426966292134831,"100 trees, 890 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+542,f_regression,OrthogonalMatchingPursuit,20,0.1477700646868451,1.4184864657414042,0.9408110711467396,21.0,6.047619047619048,linear coefficients + intercept,{'n_nonzero_coefs': 5}
+543,correlation,OrthogonalMatchingPursuit,20,0.1477700646868451,1.4184864657414042,0.9408110711467396,21.0,6.047619047619048,linear coefficients + intercept,{'n_nonzero_coefs': 5}
+544,rf_importance,ElasticNetCV,20,0.1446770472142592,1.421058207018787,0.844412927906072,21.0,6.047619047619048,linear coefficients + intercept,{}
+545,rf_importance,LassoCV,20,0.143033025732736,1.4224232637255143,0.8425581131356615,21.0,6.047619047619048,linear coefficients + intercept,{}
+546,rf_importance,LassoLarsCV,20,0.1428235552859412,1.4225970962302994,0.8428011820887024,21.0,6.047619047619048,linear coefficients + intercept,{}
+547,rfe_ridge,LassoLarsIC,20,0.1321629279761892,1.4314161174807385,0.8567671695308111,21.0,6.047619047619048,linear coefficients + intercept,{}
+548,lasso,AdaBoost-tiny,20,0.1296620275651714,1.43347713441978,0.8574175413014925,92.0,1.3804347826086956,"14 trees, 92 total nodes","{'learning_rate': 0.5, 'n_estimators': 30}"
+549,rfe_ridge,DecisionTree-tiny,20,0.1053826521576967,1.4533340931053318,0.8009135378460615,15.0,8.466666666666667,"single tree, 15 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+550,rfe_ridge,RidgeCV,20,0.1039878140045095,1.4544666311123924,0.8759642989662751,21.0,6.047619047619048,linear coefficients + intercept,{}
+551,rfe_ridge,ExtraTree-tiny,20,0.102515999980809,1.4556607142088946,0.9482455516163876,5.0,25.4,"single tree, 5 nodes","{'max_depth': 2, 'min_samples_leaf': 10}"
+552,mutual_info,RidgeCV,20,0.0988039343727523,1.4586679724239442,0.7620416934727389,21.0,6.047619047619048,linear coefficients + intercept,{}
+553,rfe_ridge,Ridge,20,0.0816212189528815,1.4725082079973166,0.8450996385291403,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 1}
+554,rfe_ridge,LinearRegression,20,0.0772111748845029,1.4760394573384596,0.8841234247385837,21.0,6.047619047619048,linear coefficients + intercept,{}
+555,f_regression,OrthogonalMatchingPursuitCV,20,0.0729397122947723,1.4794517050387466,0.9688288889943684,21.0,6.047619047619048,linear coefficients + intercept,{}
+556,correlation,OrthogonalMatchingPursuitCV,20,0.0729397122947723,1.4794517050387466,0.9688288889943684,21.0,6.047619047619048,linear coefficients + intercept,{}
+557,rf_importance,LinearSVR,20,0.0621925117326082,1.4880024694374356,0.7362874897044642,21.0,6.047619047619048,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+558,rfe_ridge,ElasticNetCV,20,0.0529246786307961,1.4953369463514945,0.8949715463378651,21.0,6.047619047619048,linear coefficients + intercept,{}
+559,rfe_ridge,TweedieRegressor,20,0.0526308222265416,1.4955689132544712,0.8627776145444166,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 0.01}
+560,rf_importance,OrthogonalMatchingPursuitCV,20,0.0469052480537957,1.5000814580726751,0.9535535437456047,21.0,6.047619047619048,linear coefficients + intercept,{}
+561,correlation,LassoLarsCV,20,0.0408219209299051,1.5048611356214123,0.9488061535993416,21.0,6.047619047619048,linear coefficients + intercept,{}
+562,f_regression,LassoLarsCV,20,0.0408219209299047,1.5048611356214128,0.9488061535993416,21.0,6.047619047619048,linear coefficients + intercept,{}
+563,rfe_ridge,OrthogonalMatchingPursuit,20,0.0395943249646073,1.505823819607928,0.9494978209950332,21.0,6.047619047619048,linear coefficients + intercept,{'n_nonzero_coefs': 10}
+564,rf_importance,HuberRegressor,20,0.0387778781097275,1.50646373874782,0.7517109583198291,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+565,mutual_info,LassoLarsIC,20,0.0369544276309515,1.50789195208268,0.7059921147067829,21.0,6.047619047619048,linear coefficients + intercept,{}
+566,rfe_ridge,LassoCV,20,0.0249099485354882,1.5172919951354455,0.902655418609196,21.0,6.047619047619048,linear coefficients + intercept,{}
+567,rfe_ridge,LassoLarsCV,20,0.0248360827577693,1.5173494635870226,0.9011167453151014,21.0,6.047619047619048,linear coefficients + intercept,{}
+568,mutual_info,ElasticNet,20,0.0185836015679302,1.5222061036074606,0.9767107670485852,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+569,lasso,ExtraTree-tiny,20,0.0179352995334644,1.5227087885006938,0.9631386293787488,13.0,9.76923076923077,"single tree, 13 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+570,rfe_ridge,LinearSVR,20,0.0095918364756958,1.5291634519998512,0.7957560756153047,21.0,6.047619047619048,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+571,lasso,KNN,20,0.0081105520216866,1.5303065563367606,0.7285324625727433,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+572,rfe_ridge,LassoLars,20,-0.0040843617808814,1.5396850944629,0.9180563260712008,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 0.001}
+573,rfe_ridge,Lasso,20,-0.0040917405816429,1.5396907518603795,0.9180489069603954,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 0.001}
+574,rfe_ridge,ElasticNet,20,-0.0046305269575599,1.54010378839499,0.917751177031184,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 0.01, 'l1_ratio': 0.2}"
+575,rfe_ridge,HuberRegressor,20,-0.0118174103548709,1.5456027360760345,0.8098124517967217,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.2}"
+576,rf_importance,LassoLars,20,-0.0289231463071011,1.5586129215050346,0.9829508347731164,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 1}
+577,rf_importance,Lasso,20,-0.0289303149717439,1.558618351042664,0.9829574515955968,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 1}
+578,rf_importance,ElasticNet,20,-0.0297699946690259,1.5592541925904169,0.9901235970266528,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+579,lasso,LassoCV,20,-0.032467279244597,1.5612949404592789,0.9849014605770235,21.0,6.047619047619048,linear coefficients + intercept,{}
+580,lasso,ElasticNetCV,20,-0.0324672792445979,1.5612949404592795,0.984901460577024,21.0,6.047619047619048,linear coefficients + intercept,{}
+581,rfe_ridge,Dummy-baseline,20,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+582,lasso,Lasso,20,-0.0324672792445992,1.5612949404592804,0.9849014605770248,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 1}
+583,f_regression,Dummy-baseline,20,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+584,mutual_info,Lasso,20,-0.0324672792445992,1.5612949404592804,0.9849014605770248,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 0.01}
+585,mutual_info,LassoLars,20,-0.0324672792445992,1.5612949404592804,0.9849014605770248,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 0.01}
+586,lasso,Dummy-baseline,20,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+587,correlation,Dummy-baseline,20,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+588,mutual_info,Dummy-baseline,20,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+589,lasso,ElasticNet,20,-0.0324672792445992,1.5612949404592804,0.9849014605770248,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+590,lasso,LassoLars,20,-0.0324672792445992,1.5612949404592804,0.9849014605770248,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 1}
+591,lasso,LassoLarsCV,20,-0.0324672792445992,1.5612949404592804,0.9849014605770248,21.0,6.047619047619048,linear coefficients + intercept,{}
+592,rf_importance,Dummy-baseline,20,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+593,lasso,LarsCV,20,-0.0327141170394631,1.5614815631138654,0.9857078301272156,21.0,6.047619047619048,linear coefficients + intercept,{}
+594,rfe_ridge,LarsCV,20,-0.0371185515133438,1.564807810807774,0.9027249127238618,21.0,6.047619047619048,linear coefficients + intercept,{}
+595,rfe_ridge,OrthogonalMatchingPursuitCV,20,-0.0410012232612615,1.56773416832658,1.0106934283064963,21.0,6.047619047619048,linear coefficients + intercept,{}
+596,mutual_info,ElasticNetCV,20,-0.0418222476226506,1.5683522724298076,0.7922840259843495,21.0,6.047619047619048,linear coefficients + intercept,{}
+597,f_regression,ElasticNet,20,-0.0474231545825518,1.5725624055404277,0.987372608804912,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+598,correlation,ElasticNet,20,-0.0474392296403298,1.5725744727428894,0.9873713655044702,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+599,rfe_ridge,PassiveAggressiveRegressor,20,-0.0568252090570957,1.579604586064449,1.0329336998679304,21.0,6.047619047619048,linear coefficients + intercept,{'C': 1}
+600,f_regression,Lasso,20,-0.0783496943749466,1.595609501014363,0.9892497493754042,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 1}
+601,correlation,LassoLars,20,-0.0784264838151327,1.5956663117965155,0.9892601772136922,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 1}
+602,f_regression,LassoLars,20,-0.0784264838151327,1.5956663117965155,0.9892601772136922,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 1}
+603,correlation,Lasso,20,-0.0784275781438019,1.5956671213940985,0.9892606902864938,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 1}
+604,rf_importance,PassiveAggressiveRegressor,20,-0.0838883930218585,1.5997019958693466,0.8907114269902622,21.0,6.047619047619048,linear coefficients + intercept,{'C': 1}
+605,mutual_info,LassoCV,20,-0.1065272975604316,1.6163219470033503,0.813947507800155,21.0,6.047619047619048,linear coefficients + intercept,{}
+606,mutual_info,LassoLarsCV,20,-0.1125114782220744,1.6206866475355866,0.8179969741596657,21.0,6.047619047619048,linear coefficients + intercept,{}
+607,mutual_info,PassiveAggressiveRegressor,20,-0.1715952622170797,1.663166034781412,0.8393141268645671,21.0,6.047619047619048,linear coefficients + intercept,{'C': 1}
+608,correlation,LarsCV,20,-0.287606396849652,1.743565899955699,1.074315930199388,21.0,6.047619047619048,linear coefficients + intercept,{}
+609,f_regression,LarsCV,20,-0.287606396849652,1.743565899955699,1.074315930199388,21.0,6.047619047619048,linear coefficients + intercept,{}
+610,rf_importance,RANSACRegressor,20,-0.2932087875427771,1.74735492085799,0.9324860146199232,21.0,6.047619047619048,RANSAC inlier-fitted LinearRegression,{}
+611,mutual_info,HuberRegressor,20,-0.3943244458674328,1.8143819831550705,0.7307436618848736,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+612,mutual_info,LinearSVR,20,-0.3986747745487329,1.8172102383989064,0.7351800354332972,21.0,6.047619047619048,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.01}"
+613,lasso,KernelRidge,20,-0.5888323870882224,1.93680476920539,1.0447362043803088,13.32981815977428,9.527511814320995,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+614,f_regression,KernelRidge,20,-0.6489029752126634,1.973078456512107,0.9633862393348888,13.162841047096505,9.648372987685208,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+615,correlation,KernelRidge,20,-0.6489029752126643,1.9730784565121076,0.9633862393348892,13.162841047096508,9.648372987685203,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+616,rfe_ridge,RANSACRegressor,20,-0.6608265633160999,1.9801994931900573,0.9503858631171992,21.0,6.047619047619048,RANSAC inlier-fitted LinearRegression,{}
+617,mutual_info,SmallMLP,20,-1.0875595885329634,2.2200678335314565,1.3758164171634908,177.0,0.7175141242937854,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+618,rfe_ridge,SmallMLP,20,-1.6344329456261315,2.493965137617229,1.337006777438127,177.0,0.7175141242937854,"layers (8,)","{'alpha': 0.1, 'hidden_layer_sizes': (8,)}"
+619,rf_importance,SmallMLP,20,-3.1732239992335725,3.138937380804922,1.8584471568827223,177.0,0.7175141242937854,"layers (8,)","{'alpha': 0.1, 'hidden_layer_sizes': (8,)}"
+620,mutual_info,RANSACRegressor,20,-3.9262664994188414,3.4104034193597235,1.4194022914599214,21.0,6.047619047619048,RANSAC inlier-fitted LinearRegression,{}
+621,lasso,RANSACRegressor,20,-21.84584119336565,7.34429952694772,2.011126580845329,21.0,6.047619047619048,RANSAC inlier-fitted LinearRegression,{}
+622,f_regression,TweedieRegressor,20,-88.40729766837606,14.528918517627316,2.292295863905704,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 1}
+623,correlation,TweedieRegressor,20,-88.40729766837612,14.52891851762732,2.292295863905705,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 1}
+624,f_regression,Ridge,20,-161.63647518728774,19.595474328997167,2.796023321047137,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 50}
+625,correlation,Ridge,20,-161.63647518728797,19.59547432899718,2.796023321047138,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 50}
+626,correlation,ElasticNetCV,20,-163.59941767190506,19.71337353152608,2.7763902634413977,21.0,6.047619047619048,linear coefficients + intercept,{}
+627,f_regression,ElasticNetCV,20,-163.61197832448673,19.714125685196983,2.7763831114667483,21.0,6.047619047619048,linear coefficients + intercept,{}
+628,correlation,LassoLarsIC,20,-171.3599144116864,20.17274221350072,2.800939201782019,21.0,6.047619047619048,linear coefficients + intercept,{}
+629,f_regression,LassoLarsIC,20,-171.3599144116864,20.17274221350072,2.8009392017820187,21.0,6.047619047619048,linear coefficients + intercept,{}
+630,correlation,LassoCV,20,-178.0538989662778,20.560737811605215,2.845430130590736,21.0,6.047619047619048,linear coefficients + intercept,{}
+631,f_regression,LassoCV,20,-178.41699967465385,20.58157465873932,2.847792476132155,21.0,6.047619047619048,linear coefficients + intercept,{}
+632,lasso,TweedieRegressor,20,-226.0540218823547,23.153220265661048,3.154971388105116,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 1}
+633,correlation,RidgeCV,20,-327.3171577371322,27.841561783820147,3.618236547486251,21.0,6.047619047619048,linear coefficients + intercept,{}
+634,f_regression,RidgeCV,20,-327.31715773714564,27.841561783820715,3.618236547486146,21.0,6.047619047619048,linear coefficients + intercept,{}
+635,correlation,BayesianRidge,20,-379.1481505881546,29.958719369128165,3.826773034119767,21.0,6.047619047619048,linear coefficients + intercept,{}
+636,f_regression,BayesianRidge,20,-379.1481505881577,29.95871936912829,3.8267730341197783,21.0,6.047619047619048,linear coefficients + intercept,{}
+637,lasso,Ridge,20,-437.4554555378392,32.17433230086503,4.055969827306081,21.0,6.047619047619048,linear coefficients + intercept,{'alpha': 50}
+638,f_regression,SGDRegressor,20,-445.8263494397714,32.4800127960194,4.095831844371642,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+639,correlation,SGDRegressor,20,-445.8263494397717,32.48001279601941,4.095831844371643,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+640,correlation,PLS,20,-451.2263542940413,32.675687794448294,4.151245633649707,4.0,31.75,3 latent components (true PLS dimensionality),{'n_components': 3}
+641,f_regression,PLS,20,-451.2263542940462,32.67568779444847,4.151245633649725,4.0,31.75,3 latent components (true PLS dimensionality),{'n_components': 3}
+642,correlation,PassiveAggressiveRegressor,20,-632.9024446799563,38.68637321100243,4.859416458927662,21.0,6.047619047619048,linear coefficients + intercept,{'C': 0.1}
+643,f_regression,PassiveAggressiveRegressor,20,-632.9024446799574,38.68637321100247,4.859416458927665,21.0,6.047619047619048,linear coefficients + intercept,{'C': 0.1}
+644,lasso,PLS,20,-694.3727367573471,40.51871217948387,4.926343519070536,4.0,31.75,3 latent components (true PLS dimensionality),{'n_components': 3}
+645,lasso,BayesianRidge,20,-739.6793169443035,41.81787041988888,5.038688454482606,21.0,6.047619047619048,linear coefficients + intercept,{}
+646,lasso,LinearRegression,20,-758.9614643423632,42.35869671085965,5.248133370863433,21.0,6.047619047619048,linear coefficients + intercept,{}
+647,lasso,RidgeCV,20,-913.034240628612,46.45452635523225,5.519934881732143,21.0,6.047619047619048,linear coefficients + intercept,{}
+648,correlation,RANSACRegressor,20,-1079.8626976199905,50.51636217981853,6.847018288736944,21.0,6.047619047619048,RANSAC inlier-fitted LinearRegression,{}
+649,f_regression,RANSACRegressor,20,-1079.8626976202206,50.5163621798239,6.847018288737913,21.0,6.047619047619048,RANSAC inlier-fitted LinearRegression,{}
+650,lasso,SGDRegressor,20,-1165.4990238961348,52.47941602662652,6.133556211952253,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+651,correlation,LinearRegression,20,-1308.819978504657,55.60996337382537,6.380004574258739,21.0,6.047619047619048,linear coefficients + intercept,{}
+652,f_regression,LinearRegression,20,-1308.8199785046604,55.60996337382544,6.380004574258745,21.0,6.047619047619048,linear coefficients + intercept,{}
+653,lasso,LassoLarsIC,20,-1363.94539840257,56.76811102861945,6.4676487436191215,21.0,6.047619047619048,linear coefficients + intercept,{}
+654,lasso,OrthogonalMatchingPursuitCV,20,-1374.6334654591462,56.98993611003375,6.590167100160659,21.0,6.047619047619048,linear coefficients + intercept,{}
+655,lasso,PassiveAggressiveRegressor,20,-1619.2228987844237,61.84921427219799,7.107467680742892,21.0,6.047619047619048,linear coefficients + intercept,{'C': 0.01}
+656,lasso,OrthogonalMatchingPursuit,20,-1857.5251097909395,66.24163150000766,7.42751608920829,21.0,6.047619047619048,linear coefficients + intercept,{'n_nonzero_coefs': 3}
+657,lasso,LinearSVR,20,-3358.601537543933,89.06164030014173,9.6672178783159,21.0,6.047619047619048,linear coefficients + intercept,"{'C': 1, 'epsilon': 0.1}"
+658,lasso,HuberRegressor,20,-3800.1662556646543,94.7338606871772,10.22995064429052,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.35}"
+659,correlation,HuberRegressor,20,-6642.9640592338765,125.24501268595772,13.189385647629834,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+660,f_regression,HuberRegressor,20,-6642.96405954232,125.24501268886496,13.18938564618852,21.0,6.047619047619048,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+661,correlation,LinearSVR,20,-7280.897589014909,131.12004429036526,13.745342498268702,21.0,6.047619047619048,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.01}"
+662,f_regression,LinearSVR,20,-7280.897589014952,131.12004429036563,13.74534249826874,21.0,6.047619047619048,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.01}"
+663,lasso,SmallMLP,20,-7459.663405753178,132.71974154454563,14.769623240139948,177.0,0.7175141242937854,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+664,f_regression,SmallMLP,20,-13037.151475957411,175.45058273873204,19.077121261016632,177.0,0.7175141242937854,"layers (8,)","{'alpha': 0.1, 'hidden_layer_sizes': (8,)}"
+665,correlation,SmallMLP,20,-25462.015828157717,245.1894186145386,25.686932105686274,177.0,0.7175141242937854,"layers (8,)","{'alpha': 0.1, 'hidden_layer_sizes': (8,)}"
+666,rf_importance,GradientBoosting-tiny,25,0.554783512959486,1.025256244520785,0.5025773937824518,1362.0,0.093245227606461,"100 stages, 1362 total nodes","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}"
+667,rf_importance,KernelRidge,25,0.4948505371838722,1.0920857784481868,0.6883254141611224,14.438446650481517,8.795960055423594,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+668,rf_importance,LinearRegression,25,0.49072093493065,1.0965405988796406,0.7562655487088883,26.0,4.884615384615385,linear coefficients + intercept,{}
+669,rfe_ridge,KernelRidge,25,0.4815716334707455,1.106346540370564,0.7377289277028981,34.62005303673478,3.668394149056974,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 0.1, 'gamma': 0.01}"
+670,rf_importance,LightGBM-tiny,25,0.4765914649242018,1.1116477773596831,0.5882309713314101,924.0,0.1374458874458874,"100 boosting trees, ~924 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+671,correlation,LightGBM-tiny,25,0.4663486008864466,1.1224722938265117,0.6190681570412763,988.0,0.1285425101214574,"100 boosting trees, ~988 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 15}"
+672,lasso,LightGBM-tiny,25,0.4585623152523973,1.1306314032755385,0.5924551997111636,952.0,0.1334033613445378,"100 boosting trees, ~952 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+673,mutual_info,GradientBoosting-tiny,25,0.4567033306230765,1.1325707080514935,0.5349632395021324,682.0,0.1862170087976539,"100 stages, 682 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+674,f_regression,LightGBM-tiny,25,0.4428456975426125,1.1469237556122407,0.6156674294172944,988.0,0.1285425101214574,"100 boosting trees, ~988 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 15}"
+675,lasso,GradientBoosting-tiny,25,0.4399797278859996,1.1498698267521406,0.6130767328140982,668.0,0.1901197604790419,"100 stages, 668 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+676,correlation,GradientBoosting-tiny,25,0.4311493934491597,1.158899876545876,0.624254445024887,670.0,0.1895522388059701,"100 stages, 670 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+677,f_regression,GradientBoosting-tiny,25,0.4225245531554399,1.1676523713106146,0.6062010989328186,670.0,0.1895522388059701,"100 stages, 670 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+678,mutual_info,LightGBM-tiny,25,0.4212237792875284,1.1689667106054142,0.5882298798208059,930.0,0.1365591397849462,"100 boosting trees, ~930 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+679,rf_importance,GaussianProcess,25,0.4209394068065198,1.169253851929889,0.5122250620188679,59.0920775406508,2.1491882716872457,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+680,mutual_info,GaussianProcess,25,0.4152279007070094,1.1750061115901616,0.5540176972938797,31.40332904442896,4.044157223596336,gp_effective_dof: trace(K(K+sigma^2*I)^-1),{'kernel': 1**2 * RBF(length_scale=1) + WhiteKernel(noise_level=0.5)}
+681,rf_importance,PassiveAggressiveRegressor,25,0.4110063947998537,1.1792397055369672,0.8628600092763506,26.0,4.884615384615385,linear coefficients + intercept,{'C': 0.1}
+682,rfe_ridge,LightGBM-tiny,25,0.4085443107039329,1.1817018371051893,0.625233977221141,1068.0,0.1189138576779026,"100 boosting trees, ~1068 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+683,rf_importance,KNN,25,0.4006402138040396,1.1895716465842587,0.5418377572304883,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+684,rfe_ridge,NuSVR,25,0.3971979421163404,1.192982758167651,0.5534027305648516,126.0,1.007936507936508,126 support vectors (of 127 training points),"{'C': 10, 'nu': 0.7}"
+685,rf_importance,NuSVR,25,0.373517942561702,1.2161891439771049,0.5530591075530265,111.0,1.1441441441441442,111 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+686,rf_importance,SVR-RBF,25,0.371474674156583,1.2181708271839873,0.5587771713975048,100.0,1.27,100 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+687,correlation,HistGradientBoosting-tiny,25,0.3681371471903933,1.2214008441939297,0.6741412555825651,796.0,0.1595477386934673,"100 stages, 796 total nodes","{'learning_rate': 0.1, 'max_depth': 3, 'min_samples_leaf': 10}"
+688,rf_importance,HistGradientBoosting-tiny,25,0.3668455058803078,1.2226485883617946,0.6988676226139244,770.0,0.1649350649350649,"100 stages, 770 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 20}"
+689,mutual_info,NuSVR,25,0.3617643410686375,1.227544758865212,0.5496429214552581,110.0,1.1545454545454543,110 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+690,mutual_info,SVR-RBF,25,0.3565296148985194,1.2325685602808305,0.5585537413788622,103.0,1.233009708737864,103 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+691,rfe_ridge,GaussianProcess,25,0.3450036325384562,1.243558583683831,0.5690319945672362,46.85531996749097,2.7104712994834905,gp_effective_dof: trace(K(K+sigma^2*I)^-1),{'kernel': 1**2 * RBF(length_scale=1) + WhiteKernel(noise_level=0.5)}
+692,rf_importance,Bagging-tiny,25,0.3439524580321028,1.244556049547814,0.704827503668436,236.0,0.538135593220339,"20 trees, 236 total nodes","{'max_samples': 1.0, 'n_estimators': 20}"
+693,mutual_info,RandomForest-tiny,25,0.3418096629855577,1.2465868890107203,0.6294393110339447,1098.0,0.1156648451730418,"100 trees, 1098 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 100}"
+694,rfe_ridge,GradientBoosting-tiny,25,0.3395050337897288,1.248767420929089,0.6082125377707539,682.0,0.1862170087976539,"100 stages, 682 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+695,f_regression,HistGradientBoosting-tiny,25,0.3373876985349597,1.2507673935317465,0.6794674471956856,796.0,0.1595477386934673,"100 stages, 796 total nodes","{'learning_rate': 0.1, 'max_depth': 3, 'min_samples_leaf': 10}"
+696,mutual_info,HistGradientBoosting-tiny,25,0.3370315733605,1.251103464807184,0.6939010832583716,806.0,0.1575682382133995,"100 stages, 806 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 20}"
+697,rf_importance,RandomForest-tiny,25,0.3364135392159861,1.25168648242015,0.6521447700565982,2130.0,0.0596244131455399,"200 trees, 2130 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 200}"
+698,rfe_ridge,SVR-RBF,25,0.31922042577089,1.2677979999670586,0.5781428300847393,107.0,1.1869158878504673,107 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+699,rf_importance,ExtraTrees-tiny,25,0.3161124639200539,1.2706886426060964,0.7320841767451614,1918.0,0.0662148070907195,"200 trees, 1918 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+700,lasso,RandomForest-tiny,25,0.3101753431167874,1.276192419608683,0.7541359225423457,864.0,0.1469907407407407,"100 trees, 864 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 100}"
+701,rf_importance,LassoLarsIC,25,0.3097939482484566,1.2765451657569211,0.7467490741946232,26.0,4.884615384615385,linear coefficients + intercept,{}
+702,f_regression,RandomForest-tiny,25,0.3093815481254391,1.2769264785308994,0.7208477648935012,984.0,0.1290650406504065,"100 trees, 984 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 100}"
+703,rf_importance,BayesianRidge,25,0.3080214578095365,1.2781832369484825,0.777064587465795,26.0,4.884615384615385,linear coefficients + intercept,{}
+704,rf_importance,Ridge,25,0.3060371558644555,1.2800145696206164,0.7782529437250161,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 10}
+705,correlation,RandomForest-tiny,25,0.3052299512488127,1.2807587977824764,0.7214497112915625,984.0,0.1290650406504065,"100 trees, 984 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 100}"
+706,lasso,GaussianProcess,25,0.303155587271434,1.2826693434457097,0.6009990183233859,66.09373281496923,1.9215135019766416,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+707,mutual_info,ExtraTrees-tiny,25,0.3024296074040759,1.2833373187481032,0.7200240444177854,1914.0,0.0663531870428422,"200 trees, 1914 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+708,f_regression,SVR-RBF,25,0.2943904417522759,1.2907110597678644,0.5980937210830602,110.0,1.1545454545454543,110 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+709,correlation,SVR-RBF,25,0.2943904417522759,1.2907110597678644,0.5980937210830602,110.0,1.1545454545454543,110 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+710,lasso,Bagging-tiny,25,0.2913019552884826,1.2935327272233368,0.7606985435158616,216.0,0.5879629629629629,"20 trees, 216 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+711,f_regression,ExtraTrees-tiny,25,0.2837073222354849,1.3004452109941855,0.7314459533770474,998.0,0.127254509018036,"100 trees, 998 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+712,rf_importance,RidgeCV,25,0.2782409321160036,1.3053979558589943,0.7749909573287573,26.0,4.884615384615385,linear coefficients + intercept,{}
+713,correlation,Bagging-tiny,25,0.2760451095344117,1.3073821674906416,0.7662851705629176,224.0,0.5669642857142857,"20 trees, 224 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+714,rfe_ridge,HistGradientBoosting-tiny,25,0.2753112388655837,1.3080446441268172,0.6483237136204284,852.0,0.1490610328638497,"100 stages, 852 total nodes","{'learning_rate': 0.1, 'max_depth': 3, 'min_samples_leaf': 10}"
+715,lasso,HistGradientBoosting-tiny,25,0.2699263262898149,1.312895464218384,0.8037181971358973,764.0,0.1662303664921466,"100 stages, 764 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 20}"
+716,f_regression,NuSVR,25,0.2656920035782535,1.3166972625153062,0.6234762966851745,110.0,1.1545454545454543,110 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+717,correlation,NuSVR,25,0.2656920035782533,1.3166972625153064,0.6234762966851747,110.0,1.1545454545454543,110 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+718,mutual_info,Bagging-tiny,25,0.264082366475272,1.3181396031886867,0.6939395620066523,232.0,0.5474137931034483,"20 trees, 232 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+719,f_regression,Bagging-tiny,25,0.2638797351906859,1.3183210623123092,0.7722363551582809,224.0,0.5669642857142857,"20 trees, 224 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+720,rf_importance,LinearSVR,25,0.2592815354330051,1.3224321205587108,0.7440707438789738,26.0,4.884615384615385,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+721,correlation,ExtraTrees-tiny,25,0.2583590942813257,1.3232552985393795,0.745747495830753,2008.0,0.0632470119521912,"200 trees, 2008 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+722,rf_importance,ExtraTree-tiny,25,0.2561033947402881,1.3252661100892005,0.848354882609269,5.0,25.4,"single tree, 5 nodes","{'max_depth': 2, 'min_samples_leaf': 10}"
+723,f_regression,AdaBoost-tiny,25,0.2456138414568215,1.3345770723972938,0.8668541986501324,188.0,0.675531914893617,"30 trees, 188 total nodes","{'learning_rate': 0.05, 'n_estimators': 30}"
+724,rfe_ridge,RandomForest-tiny,25,0.2418814192549578,1.337874494378088,0.6774695326990566,982.0,0.1293279022403258,"100 trees, 982 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 100}"
+725,f_regression,DecisionTree-tiny,25,0.2330489721305042,1.345645367888063,0.8172454104590456,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+726,rfe_ridge,AdaBoost-tiny,25,0.2329965280331658,1.345691374704483,0.8122964897232469,165.0,0.7696969696969697,"25 trees, 165 total nodes","{'learning_rate': 0.5, 'n_estimators': 30}"
+727,mutual_info,ExtraTree-tiny,25,0.2321774256958019,1.3464097318339938,0.8311023676324314,15.0,8.466666666666667,"single tree, 15 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+728,rf_importance,SGDRegressor,25,0.2312519282327311,1.3472209371577044,0.7963190029501831,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+729,correlation,AdaBoost-tiny,25,0.2274834980567238,1.3505189626273886,0.8545676932714019,262.0,0.4847328244274809,"40 trees, 262 total nodes","{'learning_rate': 0.5, 'n_estimators': 50}"
+730,correlation,GaussianProcess,25,0.2239662704017274,1.353589892623865,0.6223697608537813,62.49745361940519,2.032082791298989,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+731,f_regression,GaussianProcess,25,0.2239662696852635,1.3535898932487078,0.6223697609966625,62.49745839345843,2.0320826360723334,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+732,mutual_info,DecisionTree-tiny,25,0.2218551253849809,1.355429815036506,0.6976278727190862,13.0,9.76923076923077,"single tree, 13 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+733,rfe_ridge,ExtraTrees-tiny,25,0.2199455060046728,1.3570919534598438,0.7573859916725462,1832.0,0.0693231441048034,"200 trees, 1832 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+734,rf_importance,SmallMLP,25,0.2187603470108912,1.3581224963895857,0.94814543742392,217.0,0.5852534562211982,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+735,lasso,ExtraTrees-tiny,25,0.2184714033828794,1.3583736258363035,0.8120991367607062,1872.0,0.0678418803418803,"200 trees, 1872 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+736,lasso,NuSVR,25,0.2139459323704542,1.3623008059492707,0.6658210549499631,108.0,1.1759259259259258,108 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+737,rf_importance,ElasticNetCV,25,0.2121789819098104,1.3638310867082173,0.7765073168905375,26.0,4.884615384615385,linear coefficients + intercept,{}
+738,lasso,SVR-RBF,25,0.2110892370394663,1.3647740130199244,0.6569772538670312,97.0,1.309278350515464,97 support vectors (of 127 training points),"{'C': 50, 'epsilon': 0.1, 'gamma': 0.1}"
+739,rf_importance,LassoCV,25,0.2091567445151086,1.3664445456978116,0.7816818986788548,26.0,4.884615384615385,linear coefficients + intercept,{}
+740,rfe_ridge,DecisionTree-tiny,25,0.2090381777400266,1.3665469736125355,0.7504888277755588,15.0,8.466666666666667,"single tree, 15 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+741,rf_importance,TweedieRegressor,25,0.2085415708524809,1.366975900858298,0.8019165217110902,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 0.1}
+742,rfe_ridge,Bagging-tiny,25,0.2016372045279407,1.3729254288234625,0.7582202361958229,570.0,0.2228070175438596,"50 trees, 570 total nodes","{'max_samples': 0.7, 'n_estimators': 50}"
+743,rf_importance,DecisionTree-tiny,25,0.2009459218527759,1.3735196913638543,0.7047144110077799,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+744,mutual_info,AdaBoost-tiny,25,0.1835337450835408,1.388404215884575,0.8292652746387233,188.0,0.675531914893617,"30 trees, 188 total nodes","{'learning_rate': 0.05, 'n_estimators': 30}"
+745,mutual_info,KNN,25,0.1748669045650711,1.3957537623243823,0.6113765771880274,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+746,correlation,ExtraTree-tiny,25,0.1727637206190275,1.3975314504991034,0.9081068016816016,13.0,9.76923076923077,"single tree, 13 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+747,correlation,KNN,25,0.170851746657129,1.39914556102157,0.6933145381744071,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 9, 'weights': 'distance'}"
+748,f_regression,KNN,25,0.1708517466571287,1.3991455610215702,0.6933145381744072,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 9, 'weights': 'distance'}"
+749,rf_importance,AdaBoost-tiny,25,0.1640969529859561,1.4048331863282744,0.8256729203359542,192.0,0.6614583333333334,"30 trees, 192 total nodes","{'learning_rate': 0.05, 'n_estimators': 30}"
+750,rf_importance,HuberRegressor,25,0.1610117844829327,1.4074232925234516,0.7802981503274838,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.35}"
+751,rf_importance,LassoLarsCV,25,0.1610013646337772,1.4074320322724738,0.843556837241551,26.0,4.884615384615385,linear coefficients + intercept,{}
+752,correlation,DecisionTree-tiny,25,0.1535593593065914,1.4136602858466831,0.8288228200653938,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+753,mutual_info,LassoCV,25,0.1527287175147348,1.41435375288722,0.8704257326141508,26.0,4.884615384615385,linear coefficients + intercept,{}
+754,mutual_info,LassoLarsCV,25,0.1495737656037071,1.4169845937617314,0.871191191422382,26.0,4.884615384615385,linear coefficients + intercept,{}
+755,rf_importance,PLS,25,0.1317653542867117,1.431743960253293,0.8202502760666273,8.0,15.875,7 latent components (true PLS dimensionality),{'n_components': 7}
+756,lasso,AdaBoost-tiny,25,0.1176522426198354,1.443333517178568,0.8653477110467721,144.0,0.8819444444444444,"22 trees, 144 total nodes","{'learning_rate': 0.5, 'n_estimators': 30}"
+757,lasso,DecisionTree-tiny,25,0.1067653423617142,1.4522105468891264,0.8592477808110072,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+758,rfe_ridge,KNN,25,0.1033029538738516,1.4550223802158846,0.6701570842293592,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 9, 'weights': 'distance'}"
+759,rf_importance,LarsCV,25,0.0929160848741289,1.4634252253808508,0.8591637903068132,26.0,4.884615384615385,linear coefficients + intercept,{}
+760,rfe_ridge,ExtraTree-tiny,25,0.082637234785994,1.4716934539434086,0.9047031916754962,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+761,rfe_ridge,LinearSVR,25,0.0801967427309502,1.4736497523338217,0.7627681338397536,26.0,4.884615384615385,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.01}"
+762,correlation,OrthogonalMatchingPursuitCV,25,0.0778716854678656,1.4755111055754702,0.9948821477782404,26.0,4.884615384615385,linear coefficients + intercept,{}
+763,f_regression,OrthogonalMatchingPursuitCV,25,0.0778716854678656,1.4755111055754702,0.9948821477782404,26.0,4.884615384615385,linear coefficients + intercept,{}
+764,lasso,KNN,25,0.0773251224683527,1.4759483225534973,0.6788429967043598,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+765,rfe_ridge,SGDRegressor,25,0.07358978281,1.4789329056669231,0.8135436417475385,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+766,rfe_ridge,BayesianRidge,25,0.0732116368466854,1.479234713354305,0.7652407581785061,26.0,4.884615384615385,linear coefficients + intercept,{}
+767,rfe_ridge,LassoLarsIC,25,0.0721560955452768,1.4800768414347134,0.7591215285798629,26.0,4.884615384615385,linear coefficients + intercept,{}
+768,mutual_info,LarsCV,25,0.0675300761846544,1.483761917702164,0.9285796472118836,26.0,4.884615384615385,linear coefficients + intercept,{}
+769,mutual_info,ElasticNetCV,25,0.0537535220336219,1.4946824728252532,0.92409154605205,26.0,4.884615384615385,linear coefficients + intercept,{}
+770,correlation,OrthogonalMatchingPursuit,25,0.0532073389812657,1.4951137835270694,0.9649707360668722,26.0,4.884615384615385,linear coefficients + intercept,{'n_nonzero_coefs': 3}
+771,f_regression,OrthogonalMatchingPursuit,25,0.0532073389812657,1.4951137835270694,0.9649707360668722,26.0,4.884615384615385,linear coefficients + intercept,{'n_nonzero_coefs': 3}
+772,rfe_ridge,HuberRegressor,25,0.0505025031175694,1.4972479113958266,0.7661121559043967,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+773,lasso,ExtraTree-tiny,25,0.0480772631368174,1.49915885362516,0.9073774320271154,15.0,8.466666666666667,"single tree, 15 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+774,f_regression,ElasticNet,25,0.037434363221905,1.507516174849725,0.9689007321585096,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+775,correlation,ElasticNet,25,0.0374257805368994,1.5075228956940674,0.9688990049741596,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+776,rfe_ridge,RidgeCV,25,0.0346071259460645,1.5097284815723877,0.7715874524279698,26.0,4.884615384615385,linear coefficients + intercept,{}
+777,rfe_ridge,ElasticNet,25,0.0227710638092388,1.518955192780165,0.7977455033771855,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 0.001, 'l1_ratio': 0.2}"
+778,f_regression,ExtraTree-tiny,25,0.0207748276127313,1.5205058255436004,0.9617311068789924,11.0,11.545454545454543,"single tree, 11 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+779,rfe_ridge,OrthogonalMatchingPursuit,25,0.0195704239436318,1.521440615665147,0.9107322075732636,26.0,4.884615384615385,linear coefficients + intercept,{'n_nonzero_coefs': 10}
+780,rfe_ridge,LinearRegression,25,0.0188845068429482,1.5219727291899043,0.7784627163110035,26.0,4.884615384615385,linear coefficients + intercept,{}
+781,rfe_ridge,LassoLars,25,0.015958010092741,1.5242409289118706,0.7918510032945726,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 0.001}
+782,rfe_ridge,Lasso,25,0.0158357448262156,1.5243356179276468,0.7919153205428833,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 0.001}
+783,rfe_ridge,TweedieRegressor,25,0.0112902178936398,1.5278517619105838,0.8143607677996951,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 0.001}
+784,rfe_ridge,Ridge,25,0.0100132518626706,1.5288380903989,0.81386684586374,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 0.1}
+785,rfe_ridge,ElasticNetCV,25,-0.0011270457006788,1.5374160156247263,0.8081142529631703,26.0,4.884615384615385,linear coefficients + intercept,{}
+786,rfe_ridge,LassoCV,25,-0.0150306121570535,1.5480549556321317,0.8099734978168033,26.0,4.884615384615385,linear coefficients + intercept,{}
+787,rf_importance,LassoLars,25,-0.0210773706350473,1.552659159058286,0.9816736817399396,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 1}
+788,rf_importance,Lasso,25,-0.0210860081566419,1.5526657261897492,0.9816813589687908,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 1}
+789,rf_importance,ElasticNet,25,-0.0213752927313397,1.552885654007803,0.9813122047664056,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+790,rfe_ridge,LassoLarsCV,25,-0.0233373094588871,1.5543764507151612,0.8123898161732094,26.0,4.884615384615385,linear coefficients + intercept,{}
+791,lasso,LassoCV,25,-0.032467279244597,1.5612949404592789,0.9849014605770235,26.0,4.884615384615385,linear coefficients + intercept,{}
+792,lasso,ElasticNetCV,25,-0.0324672792445979,1.5612949404592795,0.984901460577024,26.0,4.884615384615385,linear coefficients + intercept,{}
+793,mutual_info,ElasticNet,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+794,rf_importance,Dummy-baseline,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+795,correlation,Dummy-baseline,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+796,f_regression,Lasso,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 1}
+797,f_regression,LassoLars,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 1}
+798,f_regression,Dummy-baseline,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+799,correlation,Lasso,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 1}
+800,mutual_info,Lasso,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 1}
+801,lasso,Dummy-baseline,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+802,mutual_info,LassoLars,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 1}
+803,mutual_info,Dummy-baseline,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+804,correlation,LassoLars,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 1}
+805,lasso,Lasso,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 1}
+806,lasso,ElasticNet,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+807,lasso,LassoLars,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 1}
+808,lasso,LassoLarsCV,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,26.0,4.884615384615385,linear coefficients + intercept,{}
+809,rfe_ridge,Dummy-baseline,25,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+810,rf_importance,OrthogonalMatchingPursuitCV,25,-0.0437789000849284,1.5698243473680251,1.0470383285972125,26.0,4.884615384615385,linear coefficients + intercept,{}
+811,rfe_ridge,PLS,25,-0.0691816606144333,1.5888121571190466,0.8528586095584259,8.0,15.875,7 latent components (true PLS dimensionality),{'n_components': 7}
+812,rfe_ridge,PassiveAggressiveRegressor,25,-0.0984793015063305,1.6104333024945736,0.8622362483268495,26.0,4.884615384615385,linear coefficients + intercept,{'C': 1}
+813,rfe_ridge,OrthogonalMatchingPursuitCV,25,-0.1044721011118077,1.614820220375606,1.013846131981272,26.0,4.884615384615385,linear coefficients + intercept,{}
+814,f_regression,LarsCV,25,-0.1330671927144886,1.6355907145505604,1.0182373848001596,26.0,4.884615384615385,linear coefficients + intercept,{}
+815,correlation,LarsCV,25,-0.1330671927144886,1.6355907145505604,1.0182373848001596,26.0,4.884615384615385,linear coefficients + intercept,{}
+816,correlation,LinearRegression,25,-0.1334496204686197,1.6358667098833963,0.9161464661044694,26.0,4.884615384615385,linear coefficients + intercept,{}
+817,f_regression,LinearRegression,25,-0.1334496204687532,1.6358667098834927,0.9161464661044844,26.0,4.884615384615385,linear coefficients + intercept,{}
+818,mutual_info,KernelRidge,25,-0.3502524589310285,1.7854771322315444,0.8558701210251605,13.976642585623567,9.086588515229884,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+819,rfe_ridge,LarsCV,25,-0.4313712519281327,1.8383277756424188,0.9230750223046922,26.0,4.884615384615385,linear coefficients + intercept,{}
+820,correlation,KernelRidge,25,-0.6252939516834333,1.958902242682781,0.9204872935264672,15.81050822851959,8.032632358453387,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+821,f_regression,KernelRidge,25,-0.625293951683433,1.958902242682781,0.9204872935264672,15.81050822851959,8.032632358453387,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+822,lasso,KernelRidge,25,-0.7653626122513277,2.0415676065634725,1.044439530367013,35.886773456202775,3.538908287617285,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 0.1, 'gamma': 0.01}"
+823,rf_importance,OrthogonalMatchingPursuit,25,-1.317943120784672,2.3393660947071457,1.042450201723959,26.0,4.884615384615385,linear coefficients + intercept,{'n_nonzero_coefs': 10}
+824,f_regression,LassoLarsCV,25,-1.6085297664545628,2.4816738376929,1.1205276447881756,26.0,4.884615384615385,linear coefficients + intercept,{}
+825,correlation,LassoLarsCV,25,-1.6085297664546951,2.4816738376929623,1.120527644788183,26.0,4.884615384615385,linear coefficients + intercept,{}
+826,rf_importance,RANSACRegressor,25,-1.9178302662241795,2.624682745738055,1.202219071386661,26.0,4.884615384615385,RANSAC inlier-fitted LinearRegression,{}
+827,rfe_ridge,RANSACRegressor,25,-1.9749934968242624,2.650268130548834,1.1913895441903233,26.0,4.884615384615385,RANSAC inlier-fitted LinearRegression,{}
+828,f_regression,RidgeCV,25,-2.8980725498336355,3.033693931121942,1.0992296159809012,26.0,4.884615384615385,linear coefficients + intercept,{}
+829,correlation,RidgeCV,25,-2.8980725499197018,3.033693931155433,1.0992296159846122,26.0,4.884615384615385,linear coefficients + intercept,{}
+830,rfe_ridge,SmallMLP,25,-3.1020310034186807,3.112047901044048,1.5425427266852958,217.0,0.5852534562211982,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+831,lasso,RidgeCV,25,-9.700991047103734,5.02642034081159,1.4131399461144314,26.0,4.884615384615385,linear coefficients + intercept,{}
+832,mutual_info,RANSACRegressor,25,-13.952184665418244,5.941541431752772,1.905681398932077,26.0,4.884615384615385,RANSAC inlier-fitted LinearRegression,{}
+833,lasso,LinearRegression,25,-37.67146293461564,9.555251109452652,1.8177438272227853,26.0,4.884615384615385,linear coefficients + intercept,{}
+834,correlation,LassoLarsIC,25,-40.46381982669044,9.894217617736652,1.7665865099201892,26.0,4.884615384615385,linear coefficients + intercept,{}
+835,f_regression,LassoLarsIC,25,-40.463819826690425,9.894217617736652,1.766586509920189,26.0,4.884615384615385,linear coefficients + intercept,{}
+836,correlation,HuberRegressor,25,-45.88896672135645,10.521608427895476,1.779922107552507,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+837,mutual_info,SmallMLP,25,-73.10618753453396,13.227386370296234,2.137112966215337,217.0,0.5852534562211982,"layers (8,)","{'alpha': 0.1, 'hidden_layer_sizes': (8,)}"
+838,f_regression,HuberRegressor,25,-81.6755225346323,13.97125045506257,2.12122225728366,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+839,f_regression,TweedieRegressor,25,-92.1382781079662,14.828967254959752,2.287129374067651,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 1}
+840,correlation,TweedieRegressor,25,-92.13827810796624,14.828967254959757,2.2871293740676517,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 1}
+841,mutual_info,LinearRegression,25,-153.39744785721618,19.092678628881018,2.5372573680897443,26.0,4.884615384615385,linear coefficients + intercept,{}
+842,f_regression,ElasticNetCV,25,-164.33179166659335,19.757181517653585,2.742493982715503,26.0,4.884615384615385,linear coefficients + intercept,{}
+843,correlation,ElasticNetCV,25,-164.3394721461027,19.757640421727626,2.742556811925882,26.0,4.884615384615385,linear coefficients + intercept,{}
+844,correlation,SmallMLP,25,-168.21831206005376,19.98805257891501,3.278503400742308,217.0,0.5852534562211982,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+845,correlation,Ridge,25,-169.90960207200877,20.08769174739811,2.8018027565847663,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 50}
+846,f_regression,Ridge,25,-169.90960207200885,20.087691747398114,2.8018027565847667,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 50}
+847,correlation,LassoCV,25,-178.01383992639168,20.558437695568557,2.810613020810138,26.0,4.884615384615385,linear coefficients + intercept,{}
+848,f_regression,LassoCV,25,-178.40353756732222,20.58080250067975,2.812863523240126,26.0,4.884615384615385,linear coefficients + intercept,{}
+849,mutual_info,TweedieRegressor,25,-190.1944334567382,21.24635461082793,2.8486372961374213,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 0.1}
+850,lasso,TweedieRegressor,25,-209.45498265639287,22.29083874083628,3.037481869171947,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 1}
+851,correlation,BayesianRidge,25,-218.86858942110092,22.78391747646476,3.0623445442245045,26.0,4.884615384615385,linear coefficients + intercept,{}
+852,f_regression,BayesianRidge,25,-218.86858942112255,22.783917476465884,3.062344544224615,26.0,4.884615384615385,linear coefficients + intercept,{}
+853,mutual_info,RidgeCV,25,-225.0671929310366,23.10285086912449,2.95707551090979,26.0,4.884615384615385,linear coefficients + intercept,{}
+854,correlation,PassiveAggressiveRegressor,25,-238.64875892560303,23.786710994032276,3.1656250647286366,26.0,4.884615384615385,linear coefficients + intercept,{'C': 0.1}
+855,f_regression,PassiveAggressiveRegressor,25,-238.64875892560636,23.78671099403244,3.165625064728653,26.0,4.884615384615385,linear coefficients + intercept,{'C': 0.1}
+856,f_regression,LinearSVR,25,-288.4755366208455,26.14283836027922,3.312933908435842,26.0,4.884615384615385,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+857,correlation,LinearSVR,25,-288.47553662085056,26.14283836027945,3.3129339084358667,26.0,4.884615384615385,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+858,f_regression,RANSACRegressor,25,-304.81487818273325,26.87052235454876,3.5308931551936285,26.0,4.884615384615385,RANSAC inlier-fitted LinearRegression,{}
+859,correlation,RANSACRegressor,25,-304.8148781827377,26.870522354548957,3.530893155193615,26.0,4.884615384615385,RANSAC inlier-fitted LinearRegression,{}
+860,mutual_info,Ridge,25,-315.78907285904745,27.34839855061801,3.4334271857127554,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 10}
+861,lasso,HuberRegressor,25,-354.9646038100441,28.990133237268605,3.589431748552591,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+862,mutual_info,LinearSVR,25,-362.9793605531781,29.31468168192302,3.521381126116938,26.0,4.884615384615385,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+863,mutual_info,HuberRegressor,25,-375.154355543206,29.80093233101398,3.569754903836935,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+864,f_regression,SGDRegressor,25,-385.0887355088536,30.19189477977765,3.795574319267497,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+865,correlation,SGDRegressor,25,-385.0887355088541,30.191894779777662,3.7955743192674993,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+866,lasso,Ridge,25,-388.805091711849,30.33685513227347,3.835045996659934,26.0,4.884615384615385,linear coefficients + intercept,{'alpha': 50}
+867,mutual_info,OrthogonalMatchingPursuit,25,-403.62899686281446,30.90831324461888,3.8563659322276433,26.0,4.884615384615385,linear coefficients + intercept,{'n_nonzero_coefs': 8}
+868,mutual_info,LassoLarsIC,25,-465.9964965943566,33.205009979764235,3.944322207840707,26.0,4.884615384615385,linear coefficients + intercept,{}
+869,correlation,PLS,25,-500.4225128851848,34.4071513919817,4.252242039039534,4.0,31.75,3 latent components (true PLS dimensionality),{'n_components': 3}
+870,f_regression,PLS,25,-500.4225128851855,34.40715139198172,4.252242039039537,4.0,31.75,3 latent components (true PLS dimensionality),{'n_components': 3}
+871,mutual_info,PassiveAggressiveRegressor,25,-568.1993363158599,36.65886346195639,4.478974600474699,26.0,4.884615384615385,linear coefficients + intercept,{'C': 1}
+872,lasso,PLS,25,-587.7601556197919,37.28344286242109,4.562482484461048,3.0,42.333333333333336,2 latent components (true PLS dimensionality),{'n_components': 2}
+873,mutual_info,SGDRegressor,25,-600.3691001123198,37.68056085732787,4.437106390017663,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'l2'}"
+874,mutual_info,BayesianRidge,25,-601.2935622596654,37.70951219115078,4.396922837225411,26.0,4.884615384615385,linear coefficients + intercept,{}
+875,mutual_info,PLS,25,-614.1961803158911,38.11128735725255,4.573157082955438,6.0,21.166666666666668,5 latent components (true PLS dimensionality),{'n_components': 5}
+876,lasso,LarsCV,25,-629.9694232913939,38.59676989933033,4.720623725060221,26.0,4.884615384615385,linear coefficients + intercept,{}
+877,lasso,BayesianRidge,25,-684.784444843207,40.23839215850017,4.838382778671121,26.0,4.884615384615385,linear coefficients + intercept,{}
+878,lasso,LassoLarsIC,25,-772.8731468707081,42.74464281686446,5.091848563787867,26.0,4.884615384615385,linear coefficients + intercept,{}
+879,lasso,SmallMLP,25,-878.6605122169484,45.57265727100861,6.44126448349648,217.0,0.5852534562211982,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+880,lasso,SGDRegressor,25,-982.8343586304989,48.19564497557272,5.654675124166164,26.0,4.884615384615385,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'l2'}"
+881,lasso,LinearSVR,25,-1147.924734379957,52.08259244964072,5.904857962973936,26.0,4.884615384615385,linear coefficients + intercept,"{'C': 1, 'epsilon': 0.01}"
+882,mutual_info,OrthogonalMatchingPursuitCV,25,-1374.363299285442,56.98433959417511,6.435301226972918,26.0,4.884615384615385,linear coefficients + intercept,{}
+883,lasso,OrthogonalMatchingPursuitCV,25,-1374.651393842698,56.99030747861769,6.592413368890703,26.0,4.884615384615385,linear coefficients + intercept,{}
+884,lasso,OrthogonalMatchingPursuit,25,-1978.474452892742,68.36310100002515,7.661147237343012,26.0,4.884615384615385,linear coefficients + intercept,{'n_nonzero_coefs': 3}
+885,lasso,PassiveAggressiveRegressor,25,-2062.8946530108788,69.8056486168891,7.88960137949283,26.0,4.884615384615385,linear coefficients + intercept,{'C': 0.1}
+886,f_regression,SmallMLP,25,-3388.598716319571,89.45836307479009,10.276793755618328,217.0,0.5852534562211982,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+887,lasso,RANSACRegressor,25,-3941.846032904828,96.48320310863583,10.672714036204816,26.0,4.884615384615385,RANSAC inlier-fitted LinearRegression,{}
+888,mutual_info,GradientBoosting-tiny,30,0.5244592519175022,1.0595968832522864,0.5279497766778649,682.0,0.1862170087976539,"100 stages, 682 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+889,rfe_ridge,LinearSVR,30,0.4929943285321724,1.0940904131309148,0.5746584351024313,31.0,4.096774193548387,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+890,lasso,LightGBM-tiny,30,0.4885049469048504,1.0989236570644652,0.5884141411624767,956.0,0.1328451882845188,"100 boosting trees, ~956 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+891,rfe_ridge,HuberRegressor,30,0.4829300656701313,1.104896115722554,0.5870406418162342,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.5}"
+892,rf_importance,GradientBoosting-tiny,30,0.4760227686515521,1.1122515297594504,0.5782533508775357,332.0,0.3825301204819277,"50 stages, 332 total nodes","{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 50}"
+893,lasso,GradientBoosting-tiny,30,0.4706321502247423,1.117958248696745,0.5254364313408395,670.0,0.1895522388059701,"100 stages, 670 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+894,rf_importance,LightGBM-tiny,30,0.4653650961379086,1.123506160373675,0.582465103181311,596.0,0.2130872483221476,"100 boosting trees, ~596 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100, 'num_leaves': 7}"
+895,correlation,LightGBM-tiny,30,0.4605388396476123,1.1285658250817676,0.597711857400771,302.0,0.4205298013245033,"50 boosting trees, ~302 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 50, 'num_leaves': 7}"
+896,f_regression,LightGBM-tiny,30,0.4549962042323092,1.134348673055514,0.5958985661179833,302.0,0.4205298013245033,"50 boosting trees, ~302 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 50, 'num_leaves': 7}"
+897,rfe_ridge,BayesianRidge,30,0.4355831895444292,1.1543746309709206,0.6217874119520653,31.0,4.096774193548387,linear coefficients + intercept,{}
+898,rf_importance,GaussianProcess,30,0.4297147342600305,1.160360347325755,0.5617447642968566,61.21458480494934,2.0746689764320965,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+899,f_regression,GradientBoosting-tiny,30,0.4244612512447927,1.1656927301351578,0.5505632102852615,670.0,0.1895522388059701,"100 stages, 670 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+900,rfe_ridge,RidgeCV,30,0.4107758426450365,1.1794704802453484,0.6279888759412998,31.0,4.096774193548387,linear coefficients + intercept,{}
+901,rfe_ridge,LassoLarsCV,30,0.4087127606747385,1.1815335473932362,0.6229149673092226,31.0,4.096774193548387,linear coefficients + intercept,{}
+902,correlation,GradientBoosting-tiny,30,0.4052086217109183,1.185029430175644,0.5642343127754184,670.0,0.1895522388059701,"100 stages, 670 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+903,rfe_ridge,LassoLarsIC,30,0.4015979178699586,1.1886208711972308,0.6282179400689959,31.0,4.096774193548387,linear coefficients + intercept,{}
+904,mutual_info,LightGBM-tiny,30,0.4013156771131164,1.188901149053916,0.5992991068793974,922.0,0.1377440347071583,"100 boosting trees, ~922 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+905,rfe_ridge,LinearRegression,30,0.3970380989558496,1.1931409174609715,0.6323449818809865,31.0,4.096774193548387,linear coefficients + intercept,{}
+906,mutual_info,GaussianProcess,30,0.3959984169931638,1.194169135669229,0.602595258329739,40.16174818103494,3.1622129452017123,gp_effective_dof: trace(K(K+sigma^2*I)^-1),{'kernel': 1**2 * RBF(length_scale=1) + WhiteKernel(noise_level=0.5)}
+907,rfe_ridge,LassoCV,30,0.3946082315109281,1.195542610920328,0.628718416070025,31.0,4.096774193548387,linear coefficients + intercept,{}
+908,rfe_ridge,KernelRidge,30,0.3944505322114707,1.1956983150160991,0.7451002766906332,40.43356900682896,3.1409544870637203,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 0.1, 'gamma': 0.01}"
+909,rfe_ridge,ElasticNetCV,30,0.3940097766647588,1.196133386657548,0.6375364001745426,31.0,4.096774193548387,linear coefficients + intercept,{}
+910,correlation,HistGradientBoosting-tiny,30,0.3874140047503299,1.2026252994382964,0.6344473510360107,586.0,0.2167235494880546,"100 stages, 586 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'min_samples_leaf': 10}"
+911,rfe_ridge,SVR-RBF,30,0.3839900387702035,1.2059815712681403,0.5596134123079038,102.0,1.2450980392156863,102 support vectors (of 127 training points),"{'C': 10, 'epsilon': 0.05, 'gamma': 'scale'}"
+912,f_regression,HistGradientBoosting-tiny,30,0.3824156201820496,1.2075217315475326,0.6416058001703375,586.0,0.2167235494880546,"100 stages, 586 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'min_samples_leaf': 10}"
+913,mutual_info,KNN,30,0.3781931918567447,1.21164261678828,0.578066768542165,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+914,rfe_ridge,LightGBM-tiny,30,0.3756592943974937,1.2141088624758156,0.6094900350093758,1004.0,0.1264940239043824,"100 boosting trees, ~1004 total nodes (leaf-based estimate)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 7}"
+915,rf_importance,HistGradientBoosting-tiny,30,0.3651302755442468,1.2243035600943275,0.7144259933001954,560.0,0.2267857142857142,"100 stages, 560 total nodes","{'learning_rate': 0.05, 'max_depth': 2, 'min_samples_leaf': 20}"
+916,mutual_info,HistGradientBoosting-tiny,30,0.362932021350278,1.2264213211521977,0.6897416931152093,810.0,0.1567901234567901,"100 stages, 810 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 20}"
+917,rfe_ridge,GaussianProcess,30,0.3593442130063455,1.229869922417664,0.549711903395506,57.93245017318746,2.1922083326414987,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+918,rfe_ridge,GradientBoosting-tiny,30,0.3506799987194351,1.2381583597930828,0.5843481844308238,686.0,0.1851311953352769,"100 stages, 686 total nodes","{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}"
+919,mutual_info,NuSVR,30,0.3485827334222752,1.2401563369847777,0.5542516705806079,105.0,1.2095238095238094,105 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+920,mutual_info,RandomForest-tiny,30,0.3466640011269474,1.2419814178535615,0.6392917846730118,2170.0,0.0585253456221198,"200 trees, 2170 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 200}"
+921,rf_importance,RandomForest-tiny,30,0.3416720741012663,1.2467171761989546,0.6472683676865215,2130.0,0.0596244131455399,"200 trees, 2130 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 200}"
+922,mutual_info,Bagging-tiny,30,0.341008560076968,1.2473452871832094,0.6858564194606903,236.0,0.538135593220339,"20 trees, 236 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+923,rfe_ridge,NuSVR,30,0.3258249315304942,1.2616333128341182,0.5843586531820961,127.0,1.0,127 support vectors (of 127 training points),"{'C': 10, 'nu': 0.7}"
+924,mutual_info,ExtraTree-tiny,30,0.3233814204190993,1.2639176057716095,0.7828057817144479,5.0,25.4,"single tree, 5 nodes","{'max_depth': 2, 'min_samples_leaf': 10}"
+925,mutual_info,SVR-RBF,30,0.3201499762026557,1.266932165577548,0.5681116602906306,101.0,1.2574257425742574,101 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+926,lasso,GaussianProcess,30,0.3195251964400942,1.2675141849749685,0.5841248289845475,66.84156922867601,1.900015237007858,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+927,rf_importance,ExtraTrees-tiny,30,0.3135117621444774,1.2731024505905275,0.7197186278054643,1952.0,0.065061475409836,"200 trees, 1952 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+928,mutual_info,ExtraTrees-tiny,30,0.3095042125304067,1.276813072653897,0.7162028850880742,954.0,0.1331236897274633,"100 trees, 954 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+929,rf_importance,Bagging-tiny,30,0.3087234971096613,1.2775346889652506,0.7116447700173261,238.0,0.5336134453781513,"20 trees, 238 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+930,rfe_ridge,SGDRegressor,30,0.3019056108756091,1.283819232881822,0.735772341449524,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+931,f_regression,ExtraTrees-tiny,30,0.3014391657905871,1.2842480654178288,0.7222526090138631,1034.0,0.1228239845261121,"100 trees, 1034 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 100}"
+932,rfe_ridge,HistGradientBoosting-tiny,30,0.2983241496825394,1.2871082340918785,0.6741513610763747,816.0,0.1556372549019608,"100 stages, 816 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 20}"
+933,correlation,ExtraTrees-tiny,30,0.2959181203602196,1.2893130769423653,0.730374157367799,2070.0,0.0613526570048309,"200 trees, 2070 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+934,lasso,HistGradientBoosting-tiny,30,0.2912309159297696,1.2935975569723588,0.7302005594965058,770.0,0.1649350649350649,"100 stages, 770 total nodes","{'learning_rate': 0.05, 'max_depth': 3, 'min_samples_leaf': 20}"
+935,lasso,Bagging-tiny,30,0.2858580449090979,1.298491400967055,0.7683720440386217,222.0,0.5720720720720721,"20 trees, 222 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+936,rfe_ridge,ExtraTrees-tiny,30,0.2815132099819013,1.3024354177643878,0.7339744396838297,1892.0,0.0671247357293868,"200 trees, 1892 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+937,rfe_ridge,RandomForest-tiny,30,0.2806693948836706,1.303200005363368,0.6602857173342956,1124.0,0.1129893238434163,"100 trees, 1124 total nodes","{'max_depth': 3, 'min_samples_leaf': 3, 'n_estimators': 100}"
+938,lasso,RandomForest-tiny,30,0.277943846128608,1.305666588120493,0.744948145003724,890.0,0.1426966292134831,"100 trees, 890 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 100}"
+939,rfe_ridge,Bagging-tiny,30,0.2702320224162929,1.3126205679345568,0.7320738790924534,220.0,0.5772727272727273,"20 trees, 220 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+940,f_regression,NuSVR,30,0.2667645872157327,1.315735279234132,0.5941205971578828,90.0,1.4111111111111112,90 support vectors (of 127 training points),"{'C': 1, 'nu': 0.5}"
+941,correlation,NuSVR,30,0.2667645872157321,1.3157352792341326,0.5941205971578828,90.0,1.4111111111111112,90 support vectors (of 127 training points),"{'C': 1, 'nu': 0.5}"
+942,f_regression,SVR-RBF,30,0.2664989280257869,1.3159736102720376,0.596429669605606,106.0,1.19811320754717,106 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+943,correlation,SVR-RBF,30,0.2664989280257868,1.315973610272038,0.5964296696056061,106.0,1.19811320754717,106 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+944,rf_importance,SVR-RBF,30,0.2625793755878169,1.3194849584357489,0.6019081508992993,100.0,1.27,100 support vectors (of 127 training points),"{'C': 1, 'epsilon': 0.05, 'gamma': 'scale'}"
+945,rf_importance,NuSVR,30,0.2598166951948699,1.3219543139647665,0.6048656396477557,113.0,1.1238938053097345,113 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+946,rf_importance,KNN,30,0.2582566859600071,1.3233466552020683,0.5964280686530402,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+947,rfe_ridge,PassiveAggressiveRegressor,30,0.251587324507276,1.329282756209052,0.7258864144405655,31.0,4.096774193548387,linear coefficients + intercept,{'C': 1}
+948,correlation,ExtraTree-tiny,30,0.2498247684289738,1.3308471054394462,0.8181548348441996,15.0,8.466666666666667,"single tree, 15 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+949,lasso,NuSVR,30,0.2399961688106766,1.3395369403716495,0.6300463174176859,109.0,1.165137614678899,109 support vectors (of 127 training points),"{'C': 1, 'nu': 0.7}"
+950,lasso,ExtraTrees-tiny,30,0.2360775380194423,1.3429858715675265,0.7722496078439588,1930.0,0.0658031088082901,"200 trees, 1930 total nodes","{'max_depth': 3, 'min_samples_leaf': 10, 'n_estimators': 200}"
+951,f_regression,ExtraTree-tiny,30,0.2352122449775882,1.3437462546586127,0.8831445285087266,11.0,11.545454545454543,"single tree, 11 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+952,rfe_ridge,DecisionTree-tiny,30,0.2346137582314998,1.3442719279874162,0.7046733932588389,15.0,8.466666666666667,"single tree, 15 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+953,mutual_info,DecisionTree-tiny,30,0.2335950928312706,1.3451661875799152,0.6971626239038576,11.0,11.545454545454543,"single tree, 11 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+954,correlation,RandomForest-tiny,30,0.2334289369616897,1.3453119950654946,0.7164127668971856,974.0,0.1303901437371663,"100 trees, 974 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 100}"
+955,f_regression,GaussianProcess,30,0.2331008473399016,1.34559985858361,0.6432539228297494,61.94716719654632,2.050134102130186,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+956,correlation,GaussianProcess,30,0.233100845974348,1.345599859781609,0.6432539240606275,61.947167200811286,2.0501341019890376,gp_effective_dof: trace(K(K+sigma^2*I)^-1),"{'kernel': 1**2 * RationalQuadratic(alpha=1, length_scale=1) + WhiteKernel(noise_level=0.5)}"
+957,f_regression,RandomForest-tiny,30,0.232791937487407,1.3458708376312172,0.7170604077345161,974.0,0.1303901437371663,"100 trees, 974 total nodes","{'max_depth': 3, 'min_samples_leaf': 5, 'n_estimators': 100}"
+958,lasso,SVR-RBF,30,0.2309609303294844,1.347475898041047,0.6435124958147145,93.0,1.3655913978494625,93 support vectors (of 127 training points),"{'C': 50, 'epsilon': 0.1, 'gamma': 0.1}"
+959,correlation,Bagging-tiny,30,0.2225779822506223,1.3548001062077133,0.7639808050991633,224.0,0.5669642857142857,"20 trees, 224 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+960,f_regression,LassoCV,30,0.2157280986951997,1.3607556041589628,0.8777807448366777,31.0,4.096774193548387,linear coefficients + intercept,{}
+961,correlation,LassoCV,30,0.2153518278740775,1.3610819904735891,0.8775717896312902,31.0,4.096774193548387,linear coefficients + intercept,{}
+962,correlation,LassoLarsCV,30,0.2147425012422726,1.3616103690437524,0.8789327484734136,31.0,4.096774193548387,linear coefficients + intercept,{}
+963,f_regression,LassoLarsCV,30,0.2147425012422665,1.3616103690437578,0.8789327484734162,31.0,4.096774193548387,linear coefficients + intercept,{}
+964,f_regression,Bagging-tiny,30,0.2091236419587954,1.3664731432320818,0.7574493430384691,224.0,0.5669642857142857,"20 trees, 224 total nodes","{'max_samples': 0.7, 'n_estimators': 20}"
+965,rf_importance,DecisionTree-tiny,30,0.2046281654354674,1.370351273614236,0.6807597761060469,9.0,14.11111111111111,"single tree, 9 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+966,rfe_ridge,PLS,30,0.2022485031491135,1.3723997103514638,0.7717843746476364,8.0,15.875,7 latent components (true PLS dimensionality),{'n_components': 7}
+967,rfe_ridge,AdaBoost-tiny,30,0.1957447948189905,1.377982632769113,0.8410765504530255,320.0,0.396875,"50 trees, 320 total nodes","{'learning_rate': 0.05, 'n_estimators': 50}"
+968,mutual_info,AdaBoost-tiny,30,0.1920972567997677,1.3811038796176665,0.80494369043002,186.0,0.6827956989247311,"30 trees, 186 total nodes","{'learning_rate': 0.05, 'n_estimators': 30}"
+969,correlation,KNN,30,0.1896666134666373,1.383179902891732,0.6525428855128876,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 9, 'weights': 'distance'}"
+970,f_regression,KNN,30,0.1896666134666372,1.383179902891732,0.652542885512888,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 9, 'weights': 'distance'}"
+971,f_regression,DecisionTree-tiny,30,0.1848774585947924,1.387261250257942,0.7765421725238822,13.0,9.76923076923077,"single tree, 13 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+972,correlation,DecisionTree-tiny,30,0.1848774585947921,1.3872612502579422,0.7765421725238822,13.0,9.76923076923077,"single tree, 13 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+973,rf_importance,AdaBoost-tiny,30,0.1755584921887905,1.3951687122383825,0.8091018778886,318.0,0.3993710691823899,"50 trees, 318 total nodes","{'learning_rate': 0.05, 'n_estimators': 50}"
+974,f_regression,AdaBoost-tiny,30,0.175098241719639,1.3955580894441948,0.8454932238188264,188.0,0.675531914893617,"30 trees, 188 total nodes","{'learning_rate': 0.05, 'n_estimators': 30}"
+975,lasso,AdaBoost-tiny,30,0.1543986587793711,1.4129592451947854,0.8502034241413461,192.0,0.6614583333333334,"30 trees, 192 total nodes","{'learning_rate': 0.05, 'n_estimators': 30}"
+976,rf_importance,LassoCV,30,0.1540050165048325,1.4132880856002972,0.8319604496599516,31.0,4.096774193548387,linear coefficients + intercept,{}
+977,correlation,AdaBoost-tiny,30,0.1527000855422636,1.4143776504253762,0.8650829707552322,188.0,0.675531914893617,"30 trees, 188 total nodes","{'learning_rate': 0.05, 'n_estimators': 30}"
+978,rfe_ridge,LassoLars,30,0.1514050415619031,1.4154581308215224,0.7639949297276661,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 0.001}
+979,rfe_ridge,Lasso,30,0.151398879429216,1.415463270037172,0.7639982983767902,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 0.001}
+980,rf_importance,ElasticNetCV,30,0.1483348246879861,1.4180163829921506,0.8390898757982028,31.0,4.096774193548387,linear coefficients + intercept,{}
+981,rfe_ridge,TweedieRegressor,30,0.1417411472605731,1.4234950121266974,0.6712153486298387,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 0.001}
+982,rfe_ridge,Ridge,30,0.1417012166172384,1.4235281259188342,0.6696738454941233,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 0.1}
+983,rf_importance,LassoLarsCV,30,0.1390936772502209,1.4256888482408838,0.8422636719720807,31.0,4.096774193548387,linear coefficients + intercept,{}
+984,correlation,OrthogonalMatchingPursuit,30,0.1367250549873838,1.4276487588067042,0.963701698501248,31.0,4.096774193548387,linear coefficients + intercept,{'n_nonzero_coefs': 10}
+985,f_regression,OrthogonalMatchingPursuit,30,0.1367250549873836,1.4276487588067044,0.963701698501248,31.0,4.096774193548387,linear coefficients + intercept,{'n_nonzero_coefs': 10}
+986,rf_importance,ElasticNet,30,0.1171418082419727,1.4437509379302955,0.8825418026640174,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.001, 'l1_ratio': 0.2}"
+987,rf_importance,Lasso,30,0.1053196093300196,1.453385299734028,0.921414526018246,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 0.001}
+988,rf_importance,LassoLars,30,0.099724434963284,1.4579228250452814,0.9221243094777116,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 0.001}
+989,rfe_ridge,LarsCV,30,0.0889550954505103,1.4666169353562923,0.9090381402745308,31.0,4.096774193548387,linear coefficients + intercept,{}
+990,rf_importance,ExtraTree-tiny,30,0.084580892475767,1.4701335557410995,0.8778100434060164,13.0,9.76923076923077,"single tree, 13 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+991,mutual_info,LassoLarsCV,30,0.0835631817261389,1.470950534053245,0.9006522223564879,31.0,4.096774193548387,linear coefficients + intercept,{}
+992,mutual_info,LassoCV,30,0.0806975238136283,1.4732485380597005,0.9027288754991932,31.0,4.096774193548387,linear coefficients + intercept,{}
+993,mutual_info,LarsCV,30,0.0781383583159119,1.47529773657109,0.926363874944726,31.0,4.096774193548387,linear coefficients + intercept,{}
+994,lasso,ExtraTree-tiny,30,0.055274363406887,1.4934808360876797,0.8974601847356936,11.0,11.545454545454543,"single tree, 11 nodes","{'max_depth': 3, 'min_samples_leaf': 10}"
+995,rfe_ridge,ExtraTree-tiny,30,0.0533683046210634,1.4949866848568223,0.8850145871992884,11.0,11.545454545454543,"single tree, 11 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+996,rfe_ridge,KNN,30,0.049314827063842,1.4981840327473666,0.6515309496385976,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 7, 'weights': 'distance'}"
+997,rfe_ridge,ElasticNet,30,0.0399545920342693,1.5055413610416926,0.8381678491791557,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.001, 'l1_ratio': 0.8}"
+998,lasso,KNN,30,0.0376847224657372,1.5073201128152278,0.6796310181678626,127.0,1.0,non-parametric: stores all 127 training points,"{'n_neighbors': 3, 'weights': 'distance'}"
+999,mutual_info,ElasticNetCV,30,0.0275754364871545,1.5152167554270557,0.943417218064897,31.0,4.096774193548387,linear coefficients + intercept,{}
+1000,rfe_ridge,OrthogonalMatchingPursuit,30,0.0204172057396168,1.5207834514251302,1.0013110669907397,31.0,4.096774193548387,linear coefficients + intercept,{'n_nonzero_coefs': 10}
+1001,correlation,ElasticNet,30,0.0148473513673239,1.5251008688785852,0.9644375136747628,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+1002,f_regression,ElasticNet,30,0.0148465850806744,1.5251014620172267,0.9644394990218004,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+1003,lasso,DecisionTree-tiny,30,0.0129965023423979,1.526532833207633,0.8901097668327476,13.0,9.76923076923077,"single tree, 13 nodes","{'max_depth': 4, 'min_samples_leaf': 10}"
+1004,lasso,ElasticNetCV,30,0.0096520373061367,1.5291169770655682,0.9501529822513468,31.0,4.096774193548387,linear coefficients + intercept,{}
+1005,correlation,OrthogonalMatchingPursuitCV,30,-0.0033661503362869,1.539134335326441,1.042916657457993,31.0,4.096774193548387,linear coefficients + intercept,{}
+1006,f_regression,OrthogonalMatchingPursuitCV,30,-0.0033661503362871,1.5391343353264413,1.0429166574579931,31.0,4.096774193548387,linear coefficients + intercept,{}
+1007,lasso,LassoCV,30,-0.0146671768810775,1.547777787562458,0.9802102548308286,31.0,4.096774193548387,linear coefficients + intercept,{}
+1008,lasso,Dummy-baseline,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+1009,f_regression,LassoLars,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 1}
+1010,correlation,LassoLars,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 1}
+1011,f_regression,Lasso,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 1}
+1012,correlation,Lasso,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 1}
+1013,correlation,Dummy-baseline,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+1014,rf_importance,Dummy-baseline,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+1015,mutual_info,Dummy-baseline,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+1016,f_regression,Dummy-baseline,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+1017,lasso,LassoLarsCV,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,31.0,4.096774193548387,linear coefficients + intercept,{}
+1018,lasso,Lasso,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 1}
+1019,rfe_ridge,Dummy-baseline,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,1.0,127.0,constant baseline,{}
+1020,mutual_info,Lasso,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 1}
+1021,mutual_info,ElasticNet,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+1022,lasso,ElasticNet,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 1, 'l1_ratio': 0.8}"
+1023,mutual_info,LassoLars,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 1}
+1024,lasso,LassoLars,30,-0.0324672792445992,1.5612949404592804,0.9849014605770248,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 1}
+1025,rf_importance,LarsCV,30,-0.0364816086792416,1.5643272263093484,0.9611161277677563,31.0,4.096774193548387,linear coefficients + intercept,{}
+1026,rf_importance,OrthogonalMatchingPursuitCV,30,-0.045638349370852,1.57122201400729,1.0476593523447948,31.0,4.096774193548387,linear coefficients + intercept,{}
+1027,rfe_ridge,OrthogonalMatchingPursuitCV,30,-0.1219444417586519,1.6275430299664977,1.0361599283044445,31.0,4.096774193548387,linear coefficients + intercept,{}
+1028,mutual_info,KernelRidge,30,-0.4077598330027916,1.823102508372637,0.8531341044332832,16.06291241974184,7.906411781459562,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 1, 'gamma': 0.01}"
+1029,rf_importance,KernelRidge,30,-0.4479276531441962,1.84892900345276,0.8418415457549141,40.801635712970416,3.112620309965368,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 0.1, 'gamma': 0.01}"
+1030,correlation,KernelRidge,30,-0.559768005646772,1.9190080993543737,0.8749621127406159,44.27003633758917,2.868757527812684,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 0.1, 'gamma': 0.01}"
+1031,f_regression,KernelRidge,30,-0.559768005646772,1.9190080993543737,0.8749621127406153,44.27003633758918,2.868757527812684,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 0.1, 'gamma': 0.01}"
+1032,rf_importance,OrthogonalMatchingPursuit,30,-0.595087246393829,1.9406133968231003,0.96641145310606,31.0,4.096774193548387,linear coefficients + intercept,{'n_nonzero_coefs': 10}
+1033,lasso,KernelRidge,30,-0.7697845813521162,2.0441229180304004,1.0038853927991742,39.4522177926206,3.219083922419056,krr_effective_dof: trace(K(K+alpha*I)^-1),"{'alpha': 0.1, 'gamma': 0.01}"
+1034,rfe_ridge,SmallMLP,30,-1.9654296132339015,2.646004716238601,1.441175592603522,257.0,0.4941634241245136,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+1035,rf_importance,LinearSVR,30,-2.116493084286125,2.7125633374120115,0.9579919897121,31.0,4.096774193548387,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+1036,rf_importance,HuberRegressor,30,-2.1428686067082663,2.7240176443513078,0.9475409406513312,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.01, 'epsilon': 1.5}"
+1037,rfe_ridge,RANSACRegressor,30,-2.2552347667580306,2.772285551153342,1.0240198801211309,31.0,4.096774193548387,RANSAC inlier-fitted LinearRegression,{}
+1038,correlation,HuberRegressor,30,-2.734164774264701,2.969227968646261,1.0280137856143758,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.35}"
+1039,rf_importance,RidgeCV,30,-2.778036712017523,2.986619461419949,0.9674755527871776,31.0,4.096774193548387,linear coefficients + intercept,{}
+1040,f_regression,HuberRegressor,30,-2.826342437571328,3.00565217557183,1.031993500702527,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.35}"
+1041,f_regression,LinearSVR,30,-7.941476156573698,4.594639218230045,1.2138357353304148,31.0,4.096774193548387,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+1042,correlation,LinearSVR,30,-7.941476156576169,4.594639218230679,1.2138357353304836,31.0,4.096774193548387,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+1043,correlation,RANSACRegressor,30,-10.023538200133874,5.101610637691773,1.5684673699061984,31.0,4.096774193548387,RANSAC inlier-fitted LinearRegression,{}
+1044,f_regression,RANSACRegressor,30,-10.023538200134622,5.101610637691946,1.5684673699062188,31.0,4.096774193548387,RANSAC inlier-fitted LinearRegression,{}
+1045,rf_importance,LinearRegression,30,-10.334092051269533,5.172972523033382,1.170760404064753,31.0,4.096774193548387,linear coefficients + intercept,{}
+1046,rf_importance,RANSACRegressor,30,-20.084283421844447,7.055474500634422,1.8544386516160567,31.0,4.096774193548387,RANSAC inlier-fitted LinearRegression,{}
+1047,rf_importance,LassoLarsIC,30,-27.69411484464493,8.23082219364997,1.5156475517186352,31.0,4.096774193548387,linear coefficients + intercept,{}
+1048,lasso,HuberRegressor,30,-44.63519251259776,10.37998551159532,1.8288294803962688,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.2}"
+1049,lasso,SmallMLP,30,-74.97539468702394,13.3931670674833,2.835737634619472,129.0,0.9844961240310076,"layers (4,)","{'alpha': 1.0, 'hidden_layer_sizes': (4,)}"
+1050,rf_importance,TweedieRegressor,30,-80.5343475888778,13.8744924228784,2.1006640395246103,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 0.001}
+1051,correlation,TweedieRegressor,30,-93.81214395606834,14.961625762737569,2.3147095357602354,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 1}
+1052,f_regression,TweedieRegressor,30,-93.81214395606864,14.961625762737595,2.3147095357593988,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 1}
+1053,rf_importance,BayesianRidge,30,-107.28278157074476,15.98919155638536,2.2830627768550054,31.0,4.096774193548387,linear coefficients + intercept,{}
+1054,rf_importance,Ridge,30,-122.18885761367558,17.054245786628975,2.414695020131632,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 0.1}
+1055,lasso,LinearRegression,30,-129.7425490054849,17.569333140963092,2.8060598139003625,31.0,4.096774193548387,linear coefficients + intercept,{}
+1056,correlation,ElasticNetCV,30,-161.47959215506123,19.586020917190325,2.708333301321574,31.0,4.096774193548387,linear coefficients + intercept,{}
+1057,f_regression,ElasticNetCV,30,-161.5922656455331,19.592810824947108,2.708965351408248,31.0,4.096774193548387,linear coefficients + intercept,{}
+1058,correlation,Ridge,30,-164.110435131665,19.743951013053145,2.791420114076109,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 50}
+1059,f_regression,Ridge,30,-164.11043513166504,19.74395101305315,2.791420114076109,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 50}
+1060,rf_importance,PLS,30,-169.37879870591965,20.056473764278923,2.7564827631045263,8.0,15.875,7 latent components (true PLS dimensionality),{'n_components': 7}
+1061,lasso,TweedieRegressor,30,-174.4964501943621,20.355462382944456,2.820325245918139,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 1}
+1062,mutual_info,TweedieRegressor,30,-175.88037868209753,20.43556424671433,2.803048925915232,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 0.01}
+1063,f_regression,LarsCV,30,-185.0019934328559,20.955865539700905,2.9863860607578525,31.0,4.096774193548387,linear coefficients + intercept,{}
+1064,correlation,LarsCV,30,-185.00199343285675,20.955865539700955,2.9863860607578574,31.0,4.096774193548387,linear coefficients + intercept,{}
+1065,lasso,RANSACRegressor,30,-188.9297923011528,21.17597182750122,3.8189057288511297,31.0,4.096774193548387,RANSAC inlier-fitted LinearRegression,{}
+1066,rf_importance,PassiveAggressiveRegressor,30,-196.9339299567183,21.617572673836985,3.074683507892286,31.0,4.096774193548387,linear coefficients + intercept,{'C': 1}
+1067,rf_importance,SGDRegressor,30,-203.08758514986488,21.95103980727908,2.9083879529335963,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'l2'}"
+1068,mutual_info,OrthogonalMatchingPursuit,30,-257.1102657193938,24.6859271377455,3.2456972067301453,31.0,4.096774193548387,linear coefficients + intercept,{'n_nonzero_coefs': 5}
+1069,correlation,BayesianRidge,30,-272.5822287055089,25.41503694915733,3.303387379983419,31.0,4.096774193548387,linear coefficients + intercept,{}
+1070,f_regression,BayesianRidge,30,-272.5822287055223,25.41503694915795,3.3033873799834788,31.0,4.096774193548387,linear coefficients + intercept,{}
+1071,correlation,PLS,30,-294.3696888629553,26.407650685608974,3.5228009641722995,4.0,31.75,3 latent components (true PLS dimensionality),{'n_components': 3}
+1072,f_regression,PLS,30,-294.3696888629563,26.40765068560902,3.5228009641723044,4.0,31.75,3 latent components (true PLS dimensionality),{'n_components': 3}
+1073,lasso,Ridge,30,-296.7460768261938,26.51366885165548,3.428096579784492,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 50}
+1074,mutual_info,Ridge,30,-303.3075243230104,26.804218485929685,3.403354405337591,31.0,4.096774193548387,linear coefficients + intercept,{'alpha': 1}
+1075,f_regression,SGDRegressor,30,-309.03511695985145,27.055293396475264,3.482669520239226,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'l2'}"
+1076,correlation,SGDRegressor,30,-309.035116959852,27.05529339647529,3.482669520239229,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'l2'}"
+1077,f_regression,LassoLarsIC,30,-332.2416998279515,28.049587211555487,3.5219930078886112,31.0,4.096774193548387,linear coefficients + intercept,{}
+1078,correlation,LassoLarsIC,30,-332.2416998279579,28.04958721155576,3.521993007888638,31.0,4.096774193548387,linear coefficients + intercept,{}
+1079,mutual_info,RANSACRegressor,30,-356.95705190663983,29.071153559807208,4.6804755426177245,31.0,4.096774193548387,RANSAC inlier-fitted LinearRegression,{}
+1080,lasso,LinearSVR,30,-400.2275286042116,30.778125431345977,3.837550386706012,31.0,4.096774193548387,linear coefficients + intercept,"{'C': 1, 'epsilon': 0.01}"
+1081,lasso,PassiveAggressiveRegressor,30,-406.3364405914608,31.01154732110981,4.198200725425527,31.0,4.096774193548387,linear coefficients + intercept,{'C': 1}
+1082,f_regression,PassiveAggressiveRegressor,30,-433.0244545904261,32.01134366260846,3.966880639891867,31.0,4.096774193548387,linear coefficients + intercept,{'C': 0.1}
+1083,correlation,PassiveAggressiveRegressor,30,-433.0244545904265,32.011343662608475,3.966880639891869,31.0,4.096774193548387,linear coefficients + intercept,{'C': 0.1}
+1084,mutual_info,PLS,30,-438.76050442187847,32.22217966774761,3.991865765353927,6.0,21.166666666666668,5 latent components (true PLS dimensionality),{'n_components': 5}
+1085,lasso,BayesianRidge,30,-456.7048281535463,32.87301596685763,4.065699934842316,31.0,4.096774193548387,linear coefficients + intercept,{}
+1086,lasso,RidgeCV,30,-458.46158654975056,32.93604199970993,4.093928268031172,31.0,4.096774193548387,linear coefficients + intercept,{}
+1087,mutual_info,LassoLarsIC,30,-465.7058509844309,33.19467543493645,3.93193106200612,31.0,4.096774193548387,linear coefficients + intercept,{}
+1088,lasso,LarsCV,30,-515.9654903395241,34.936354068914945,4.299733548557015,31.0,4.096774193548387,linear coefficients + intercept,{}
+1089,lasso,SGDRegressor,30,-569.0306092614511,36.68562245613672,4.477154602130124,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'elasticnet'}"
+1090,lasso,PLS,30,-581.6680352764687,37.09004845437327,4.574339298033048,4.0,31.75,3 latent components (true PLS dimensionality),{'n_components': 3}
+1091,mutual_info,SGDRegressor,30,-597.2479213955995,37.582650304971175,4.418802811269184,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.01, 'penalty': 'l2'}"
+1092,mutual_info,BayesianRidge,30,-653.4032359526735,39.3069659886588,4.550880559386517,31.0,4.096774193548387,linear coefficients + intercept,{}
+1093,correlation,RidgeCV,30,-654.7351382484463,39.3469462515892,4.713787350470815,31.0,4.096774193548387,linear coefficients + intercept,{}
+1094,f_regression,RidgeCV,30,-654.7351382523264,39.3469462517056,4.713787350482235,31.0,4.096774193548387,linear coefficients + intercept,{}
+1095,mutual_info,LinearRegression,30,-658.9758549644879,39.47397188828879,4.556916341659386,31.0,4.096774193548387,linear coefficients + intercept,{}
+1096,lasso,LassoLarsIC,30,-690.1083261697072,40.39427952628357,4.837975324254703,31.0,4.096774193548387,linear coefficients + intercept,{}
+1097,correlation,LinearRegression,30,-713.7079517025638,41.07817217287336,4.774576785729625,31.0,4.096774193548387,linear coefficients + intercept,{}
+1098,f_regression,LinearRegression,30,-713.7079517025812,41.078172172873856,4.774576785729674,31.0,4.096774193548387,linear coefficients + intercept,{}
+1099,mutual_info,LinearSVR,30,-728.7412984516554,41.507948230178336,4.721631328155295,31.0,4.096774193548387,linear coefficients + intercept,"{'C': 10, 'epsilon': 0.1}"
+1100,mutual_info,RidgeCV,30,-743.235565600935,41.91814098373234,4.783011749253561,31.0,4.096774193548387,linear coefficients + intercept,{}
+1101,lasso,OrthogonalMatchingPursuit,30,-779.023944107882,42.91417530672548,5.123385182628264,31.0,4.096774193548387,linear coefficients + intercept,{'n_nonzero_coefs': 10}
+1102,mutual_info,PassiveAggressiveRegressor,30,-821.3993123505828,44.06443167161715,5.243120368247719,31.0,4.096774193548387,linear coefficients + intercept,{'C': 0.1}
+1103,mutual_info,HuberRegressor,30,-828.5684401000561,44.256077056432254,4.988334006905786,31.0,4.096774193548387,linear coefficients + intercept,"{'alpha': 0.1, 'epsilon': 1.2}"
+1104,f_regression,SmallMLP,30,-907.1639449698956,46.30511123809456,5.822992628828031,129.0,0.9844961240310076,"layers (4,)","{'alpha': 1.0, 'hidden_layer_sizes': (4,)}"
+1105,lasso,OrthogonalMatchingPursuitCV,30,-1374.464401586123,56.98643400150951,6.47572661782439,31.0,4.096774193548387,linear coefficients + intercept,{}
+1106,mutual_info,OrthogonalMatchingPursuitCV,30,-1374.4658520192943,56.98646404772238,6.462768524708933,31.0,4.096774193548387,linear coefficients + intercept,{}
+1107,rf_importance,SmallMLP,30,-1444.7600935767985,58.424488698730194,6.859804015036006,257.0,0.4941634241245136,"layers (8,)","{'alpha': 0.1, 'hidden_layer_sizes': (8,)}"
+1108,mutual_info,SmallMLP,30,-2983.888102817879,83.94809229854376,9.395757419048802,257.0,0.4941634241245136,"layers (8,)","{'alpha': 1.0, 'hidden_layer_sizes': (8,)}"
+1109,correlation,SmallMLP,30,-3145.476765828368,86.1904341777408,9.982473999120632,129.0,0.9844961240310076,"layers (4,)","{'alpha': 1.0, 'hidden_layer_sizes': (4,)}"
