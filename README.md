@@ -1,4 +1,4 @@
-# LEAPS
+# SEP
 
 SEP: Solvent Extraction Predictor, a machine learning based screener for biomass separation via liquid-liquid extraction.
 
