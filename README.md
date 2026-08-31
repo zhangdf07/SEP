@@ -1,6 +1,6 @@
 # LEAPS
 
-LEAPS: Liquid–Liquid Extraction Artificial Predictor and Screener for biomass separation
+SEP: Solvent Extraction Predictor, a machine learning based screener for biomass separation via liquid-liquid extraction.
 
 This project aims to develop fast-screening tools for identifying solvent candidates in the liquid-liquid extraction of biomass downstream separation. 
 
