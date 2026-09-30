@@ -30,4 +30,8 @@ Current compounds with experimental validations:
 
 2. Long-chain fatty acid: under investigation.
 
-This project is supported by U.S. Department of Energy, Bioenergy Technologies Office (BETO), via the Bioprocessing Separation Consortium. 
+   Details:
+       ML_screening.ipynb: Codes containing data processing, ML parameterization, solvent screening, and visualization.
+
+
+This project is supported by U.S. Department of Energy, Alternative Fuels and Feedstocks Office, Bioprocessing Separation Consortium. 
